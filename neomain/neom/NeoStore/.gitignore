@@ -1,0 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+neostore-app/node_modules
+# dependencies
+finalproject/node_modules
+finalproject/.pnp
+finalproject/.pnp.js
+
+# testing
+finalproject/coverage
+
+# production
+finalproject/build
+
+# misc
+finalproject/.DS_Store
+finalproject/.env.local
+finalproject/.env.development.local
+finalproject/.env.test.local
+finalproject/.env.production.local
+
+finalproject/npm-debug.log*
+finalproject/yarn-debug.log*
+finalproject/yarn-error.log*

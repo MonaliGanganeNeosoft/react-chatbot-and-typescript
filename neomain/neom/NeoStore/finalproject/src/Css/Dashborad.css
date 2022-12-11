@@ -1,0 +1,16 @@
+.BannerImage{
+    height: 500px;
+  }
+  .CardImage{
+    height: 350px;
+  }
+  .cardSIze{
+     width: 360px
+  }
+  .cardtext {
+    display: inline-block;
+    width: 280px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}

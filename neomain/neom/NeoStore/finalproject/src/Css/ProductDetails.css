@@ -1,0 +1,29 @@
+.navimage{
+    height: 80px;
+    width: 80px;
+    border: 1px black solid;
+    margin: 2.8%;
+}
+.MainImage{
+    height: 450px;
+    width:100%;
+}
+.box{
+    box-shadow: 1px 1px 9px #343434;
+    border-radius: 10px;
+}
+.social{
+    border-radius: 50%;
+}
+.social-icon{
+    border-radius: 50%;
+}
+.crossbutton{
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 361px)and (min-width: 359px) {
+    element.style{
+        width: 250px;
+    }
+  }

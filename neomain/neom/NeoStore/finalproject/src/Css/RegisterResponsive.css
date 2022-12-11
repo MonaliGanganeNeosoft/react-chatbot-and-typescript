@@ -1,0 +1,36 @@
+
+@media screen and  (max-width: 912px) {
+    .SocialButton{
+        margin-left: 0px !important;
+        margin-top: 0px;
+        width: 330px;
+    }
+    .socialsec{
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .formdata{
+        text-align: center;
+    }
+    .mb-5{
+        margin-bottom: 30px !important;
+    }
+    }
+   
+@media screen and  (max-width: 280px) {
+    .SocialButton{
+        margin-left: 0px !important;
+        margin-top: 0px;
+        width: 240px !important;
+    }
+    .socialsec{
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .formdata{
+        text-align: center;
+    }
+    .mb-5{
+        margin-bottom: 30px !important;
+    }
+    }

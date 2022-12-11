@@ -1,0 +1,48 @@
+
+.num{
+    background-color: #4169E1;
+    border-radius: 50%;
+    padding: 2px;
+    padding-left: 5px;
+  }
+  .num1{
+    background-color: gray;
+    border-radius: 50%;
+    padding: 2px;
+    padding-left: 5px;
+  }
+  .imagesize{
+      height: 80px;
+      width: 80px;
+  }
+  .Carts{
+      margin: 20px;
+    box-shadow: 1px 1px 9px #343434;
+  }
+  .revie{
+    margin-bottom: 0px;
+  }
+  .productname{
+    margin-left: 10px;
+      display: inline-block;
+      width: 300px;
+      white-space: nowrap;
+      overflow: hidden !important;
+      text-overflow: ellipsis;
+  }
+  .stock{
+    color: green;
+  }
+  .margincheck{
+    margin-left: 10px;
+
+  }
+  .butn{
+    border-radius: 50%;
+    margin: 5px;
+  }
+  .review{
+    /* border: none; */
+    margin: 20px;
+    background-color: white;
+  }

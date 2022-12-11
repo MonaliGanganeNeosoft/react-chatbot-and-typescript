@@ -1,0 +1,3 @@
+hello
+change in bugfix cp
+changes last in cp from bugfix cp

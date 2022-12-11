@@ -1,0 +1,135 @@
+# enable Docker for your repository
+options:
+    docker: true
+
+definitions:
+    services:
+        docker:
+            memory: 2048
+pipelines:
+    branches:
+        master:
+            - step:
+                name: SonarQube-Scan 
+                script:
+                  - pipe: sonarsource/sonarqube-scan:1.0.0
+                    variables:
+                      SONAR_HOST_URL: ${SONAR_HOST_URL} # Get the value from the repository/workspace variable.
+                      SONAR_TOKEN: ${SONAR_TOKEN} # Get the value from the repository/workspace variable. You shouldn't set secret in clear text here.
+            - step:
+                  #python image with aws-cli installed
+                  name: Build And Push Image To ECR
+                  deployment: test
+                  image: tstrohmeier/awscli:3.8.3
+                  trigger: 'manual'
+                  script:
+                      # aws login
+                      - eval $(aws ecr get-login --region ${AWS_DEFAULT_REGION} --no-include-email)
+                      # docker
+                      # - export BUILD_ID=$BITBUCKET_BRANCH_$BITBUCKET_COMMIT_$BITBUCKET_BUILD_NUMBER
+                      # - docker build -t ${AWS_REGISTRY_URL}:$BUILD_ID .
+                      - docker build -t iam-service:development .
+                      - docker tag iam-service:development ${AWS_REGISTRY_URL}:development
+                      - docker push ${AWS_REGISTRY_URL}:development
+            - step:
+                  name: Deploy to EKS-Cluster
+                  image: atlassian/pipelines-kubectl
+                  script:
+                      - kubectl config set-cluster eks-d-xrm --certificate-authority=kube-resources/ca.crt --server=$K8s_SERVER_URL
+                      - kubectl config set-credentials $K8s_USERNAME --token=$K8s_USER_TOKEN
+                      - kubectl config set-context aws --cluster=eks-d-xrm --namespace=development --user=$K8s_USERNAME
+                      - kubectl config use-context aws --user=$K8s_USERNAME
+                      - kubectl rollout restart deployment/iam-service-deployment --namespace=development --user=$K8s_USERNAME
+        # master:
+        #   - step:
+        #       #python image with aws-cli installed
+        #       name: Build And Push Image To ECR
+        #       image: tstrohmeier/awscli:3.8.3
+        #       script:
+        #         # aws login
+        #         - eval $(aws ecr get-login --region ${AWS_DEFAULT_REGION} --no-include-email)
+        #         # docker
+        #         - export BUILD_ID=$BITBUCKET_BRANCH_$BITBUCKET_COMMIT_$BITBUCKET_BUILD_NUMBER
+        #         - docker build -t ${AWS_REGISTRY_URL}:$BUILD_ID .
+        #         - docker push ${AWS_REGISTRY_URL}:$BUILD_ID
+        #   - step:
+        #       name: Deploy to EKS-Cluster
+        #       deployment: test
+        #       image: atlassian/pipelines-kubectl
+        #       script:
+        #         - kubectl config set-cluster eks-d-xrm --certificate-authority=kube-resources/ca.crt --server=$K8s_SERVER_URL
+        #         - kubectl config set-credentials $K8s_USERNAME --token=$K8s_USER_TOKEN
+        #         - kubectl config set-context aws --cluster=eks-d-xrm --namespace=development --user=$K8s_USERNAME
+        #         - kubectl config use-context aws --user=$K8s_USERNAME
+        #         - export BUILD_ID=$BITBUCKET_BRANCH_$BITBUCKET_COMMIT_$BITBUCKET_BUILD_NUMBER
+        #         - kubectl set image deployment/iam-service-deployment iam-service=${AWS_REGISTRY_URL}:$BUILD_ID --namespace=development --user=$K8s_USERNAME --local=false
+        # staging build & deployment
+        staging:
+            - step:
+                  #python image with aws-cli installed
+                  name: Build And Push Image To ECR
+                  image: tstrohmeier/awscli:3.8.3
+                  script:
+                      # aws login
+                      - eval $(aws ecr get-login --region ${AWS_DEFAULT_REGION} --no-include-email)
+                      # docker
+                      - export BUILD_ID=staging_$BITBUCKET_BRANCH_$BITBUCKET_COMMIT_$BITBUCKET_BUILD_NUMBER
+                      - docker build -t ${AWS_REGISTRY_URL}:$BUILD_ID .
+                      - docker push ${AWS_REGISTRY_URL}:$BUILD_ID
+            - step:
+                  name: Deploy to EKS-Cluster
+                  deployment: staging
+                  image: atlassian/pipelines-kubectl
+                  script:
+                      - kubectl config set-cluster eks-d-xrm --certificate-authority=kube-resources/ca.crt --server=$K8s_SERVER_URL
+                      - kubectl config set-credentials $K8s_USERNAME --token=$K8s_USER_TOKEN
+                      - kubectl config set-context aws --cluster=eks-d-xrm --namespace=staging --user=$K8s_USERNAME
+                      - kubectl config use-context aws --user=$K8s_USERNAME
+                      - export BUILD_ID=staging_$BITBUCKET_BRANCH_$BITBUCKET_COMMIT_$BITBUCKET_BUILD_NUMBER
+                      - kubectl set image deployment/iam-service-deployment iam-service=${AWS_REGISTRY_URL}:$BUILD_ID --namespace=staging --user=$K8s_USERNAME --local=false
+        uat:
+            - step:
+                  #python image with aws-cli installed
+                  name: Build And Push Image To ECR
+                  image: tstrohmeier/awscli:3.8.3
+                  script:
+                      # aws login
+                      - eval $(aws ecr get-login --region ${AWS_DEFAULT_REGION} --no-include-email)
+                      # docker
+                      - export BUILD_ID=$BITBUCKET_BRANCH_$BITBUCKET_COMMIT_$BITBUCKET_BUILD_NUMBER
+                      - docker build -t ${AWS_REGISTRY_URL_UAT}:$BUILD_ID .
+                      - docker push ${AWS_REGISTRY_URL_UAT}:$BUILD_ID
+            - step:
+                  name: Deploy to EKS-Cluster
+                  deployment: uat
+                  image: atlassian/pipelines-kubectl
+                  script:
+                      - kubectl config set-cluster eks-d-xrm --certificate-authority=kube-resources/ca.crt --server=$K8s_SERVER_URL
+                      - kubectl config set-credentials $K8s_USERNAME --token=$K8s_USER_TOKEN
+                      - kubectl config set-context aws --cluster=eks-d-xrm --namespace=uat --user=$K8s_USERNAME
+                      - kubectl config use-context aws --user=$K8s_USERNAME
+                      - export BUILD_ID=$BITBUCKET_BRANCH_$BITBUCKET_COMMIT_$BITBUCKET_BUILD_NUMBER
+                      - kubectl set image deployment/iam-service-deployment iam-service=${AWS_REGISTRY_URL}:$BUILD_ID --namespace=uat --user=$K8s_USERNAME --local=false
+        production:
+            - step:
+                  #python image with aws-cli installed
+                  name: Build And Push Image To ECR
+                  image: tstrohmeier/awscli:3.8.3
+                  script:
+                      # aws login
+                      - eval $(aws ecr get-login --region ${AWS_DEFAULT_REGION} --no-include-email)
+                      # docker
+                      - export BUILD_ID=$BITBUCKET_BRANCH_$BITBUCKET_COMMIT_$BITBUCKET_BUILD_NUMBER
+                      - docker build -t ${AWS_REGISTRY_URL_PROD}:$BUILD_ID .
+                      - docker push ${AWS_REGISTRY_URL_PROD}:$BUILD_ID
+            - step:
+                  name: Deploy to EKS-Cluster
+                  deployment: production
+                  image: atlassian/pipelines-kubectl
+                  script:
+                      - kubectl config set-cluster xrm-production --certificate-authority=kube-resources/ca-prod.crt --server=$K8s_SERVER_URL
+                      - kubectl config set-credentials $K8s_USERNAME --token=$K8s_USER_TOKEN
+                      - kubectl config set-context aws --cluster=xrm-production --namespace=default --user=$K8s_USERNAME
+                      - kubectl config use-context aws --user=$K8s_USERNAME
+                      - export BUILD_ID=$BITBUCKET_BRANCH_$BITBUCKET_COMMIT_$BITBUCKET_BUILD_NUMBER
+                      - kubectl set image deployment/iam-service-deployment iam-service=${AWS_REGISTRY_URL}:$BUILD_ID --namespace=default --user=$K8s_USERNAME --local=false

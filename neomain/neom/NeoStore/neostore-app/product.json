@@ -1,0 +1,65 @@
+[
+  {
+    "_id": {
+      "$oid": "61d6a94b007a8a243b9398a3"
+    },
+    "product_name": "Adorn India Bradley Sal Leatherette L Shape Sofa (Standard Size, White)",
+    "product_image": "whiteSofa1.jpg",
+    "product_desc": " Warranty : 2 year warranty for frame and foam ( We provide service warranty only for major materials If Wood Gets Broken, Or Foam Gets Sink & never come back till one hour only that two conditions you can claim warranty, And foam gets soft that is in its nature after regular use & There Is No Warranty ",
+    "product_rating": "3",
+    "product_cost": 31999,
+    "product_stock": 300,
+    "product_dimension": "175D x 76W x 73H Centimeters",
+    "product_material": "Wood",
+    "product_subImages": [
+      "whiteSofa2.jpg",
+      "whiteSofa3.jpg",
+      "whiteSofa4.jpg",
+      "whiteSofa5.jpg"
+    ],
+    "color_id": { "$oid": "61d521627f5741266a3aa8b4" },
+    "category_id": { "$oid": "61d52a0f29268052ad02924c" }
+  },
+  {
+    "_id": {
+      "$oid": "61d6a94b007a8a243b9398a4"
+    },
+    "product_name": "two",
+    "product_image": "whiteSofa1.jpg",
+    "product_desc": " Warranty : 2 year warranty for frame and foam ( We provide service warranty only for major materials If Wood Gets Broken, Or Foam Gets Sink & never come back till one hour only that two conditions you can claim warranty, And foam gets soft that is in its nature after regular use & There Is No Warranty ",
+    "product_rating": "3",
+    "product_cost": 31999,
+    "product_stock": 300,
+    "product_dimension": "175D x 76W x 73H Centimeters",
+    "product_material": "Wood",
+    "product_subImages": [
+      "whiteSofa2.jpg",
+      "whiteSofa3.jpg",
+      "whiteSofa4.jpg",
+      "whiteSofa5.jpg"
+    ],
+    "color_id": { "$oid": "61d521627f5741266a3aa8b4" },
+    "category_id": { "$oid": "61d52a0f29268052ad02924c" }
+  },
+  {
+    "_id": {
+      "$oid": "61d6a94b007a8a243b9398a5"
+    },
+    "product_name": "three",
+    "product_image": "whiteSofa1.jpg",
+    "product_desc": " Warranty : 2 year warranty for frame and foam ( We provide service warranty only for major materials If Wood Gets Broken, Or Foam Gets Sink & never come back till one hour only that two conditions you can claim warranty, And foam gets soft that is in its nature after regular use & There Is No Warranty ",
+    "product_rating": "3",
+    "product_cost": 31999,
+    "product_stock": 300,
+    "product_dimension": "175D x 76W x 73H Centimeters",
+    "product_material": "Wood",
+    "product_subImages": [
+      "whiteSofa2.jpg",
+      "whiteSofa3.jpg",
+      "whiteSofa4.jpg",
+      "whiteSofa5.jpg"
+    ],
+    "color_id": { "$oid": "61d521627f5741266a3aa8b4" },
+    "category_id": { "$oid": "61d52a0f29268052ad02924c" }
+  }
+]

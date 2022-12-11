@@ -1,0 +1,7 @@
+{
+  "singleQuote": true,
+  "trailingComma": "all"
+  "max-len": ["error", { "code": 80 }],
+  "useTabs": true,
+  "tabWidth": 4
+}

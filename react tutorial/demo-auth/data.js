@@ -1,0 +1,67 @@
+const navbar_data1 = [
+  {
+    id: 1,
+    title: "Primary Navigation",
+    Link: "",
+    listArr: [
+      { product: "Contact me", productLink: "" },
+      { product: "Returning User" },
+      // "Group Personal Accident",
+      // "Group Term Life Insurance",
+      // "Workmen Compensation",
+      // "Group Gratuity",
+      // "Group Employee's Deposit Linked Insurance (EDLI)",
+      // "Group Superannuation",
+      // "Group Travel Insurance",
+    ],
+  },
+  {
+    id: 2,
+    title: "Calculators",
+    Link: "",
+    listArr: [
+      { product: "Group Health Insurance", productLink: "" },
+      { product: "Group Personal Accident" },
+      { product: "Workmen Compensation" },
+      { product: "Office Insurance" },
+      { product: "Construction All Risk" },
+      { product: "Directors & Officers Liability" },
+      { product: "Errors & Omissions" },
+      { product: "Family Health Insurance" },
+      { product: "Senior Citizen Insurance" },
+      { product: "Term Life & Keyman" },
+      { product: "Home Insurance" },
+      { product: "Critical Illness" },
+      { product: "Jewellers" },
+      { product: "Doctors" },
+    ],
+  },
+  {
+    id: 3,
+    title: "About us",
+  },
+
+  {
+    id: 4,
+    title: "Useful Links",
+    Link: "",
+    listArr: [
+      { product: "Get a quote", productLink: "" },
+      { product: "Issue a policy" },
+      { product: "Claim intimation" },
+      { product: "Claim submission" },
+    ],
+  },
+  {
+    id: 4,
+    title: "Terms of use",
+    Link: "",
+    listArr: [
+      { product: "Insuropedia", productLink: "" },
+      { product: "Terms" },
+      { product: "Privacy policy" },
+      { product: "Code of conduct" },
+      { product: "Cancellation & Refund Policy" },
+    ],
+  },
+];

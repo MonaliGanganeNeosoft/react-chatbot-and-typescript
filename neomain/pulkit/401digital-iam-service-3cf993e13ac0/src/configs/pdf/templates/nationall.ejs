@@ -1,0 +1,694 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no">
+		<title>CRM :: Organization</title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700&display=swap" rel="stylesheet"/>
+        <style>
+         .outer-section-one
+         {
+             /* max-width:8.3in;
+             min-height:11.6in; */
+             width:90%;
+             margin:0 auto;
+         }
+        </style>
+    </head>
+    <body>
+        <div class="outer-section-one" style="height: 710px; font-family: 'Poppins', sans-serif; padding: 20px;">
+            <div class="header" style="padding: 20px 0;     display: inline-block; width: 100%;">
+                
+                <div class="" style="float: left; width: 20%;text-align:center; ">
+                    <h4 style="word-break: break-all; font-size:7px;line-height:14px;margin: 0px;font-weight: 500;"
+                    >
+                    NationAll Auto Protection
+                        4800 Dundas Street West,
+                    Suite 207, Toronto,
+                        Ontarion, M9A 1B1
+                    
+                    </h4>
+                        
+                </div>
+                <div class="" style="float: left; width:60%; text-align: center;">
+                    <h2 style="margin-bottom:8px;word-break: break-all; font-size:12px;line-height:20px;margin: 0px;letter-spacing: 1px;font-weight: 600;"> 
+                        
+                        NationAll 
+                    </h2>
+                    <h3 style="margin-top:2px;margin-bottom:0px;font-size:12px;">
+                        AutoMotive 
+                    </h3>
+                    <h3 style="margin:0px;font-size:12px;">
+                        Protection  Program
+                    </h3>
+                </div>
+                
+                <div class="" style="float: left; width:20%; text-align: left;">
+                    <h4 style="word-break: break-all; font-size:7px;line-height:14px;margin: 0px;font-weight: 500;">
+                         Contact:
+                         <br/>
+                         NationAll Auto Protection
+                         <br/>
+                        Phone: <span>1 855 444 7822</span>
+                        <br/>
+                        Fax:<span>519 653  9596</span>
+                        
+                        </h4>                    
+                </div>
+            </div>
+
+            <div class="tableWRapper" style="border: 2px solid #000; margin-bottom: 8px;">
+
+                <table style=" border-collapse: collapse; margin:auto; width: 100%; ">
+                    <thead style="background:#d9d9d9; ">
+                        <tr style="border-bottom: 2px solid #000;">
+                            <th colspan="2" class="white-box" style="">
+                                <h3 style="word-break: break-all; font-size:8px;margin: 0; padding:4px; text-align: left; font-weight: 600; text-transform: uppercase;">CUSTOMER INFORMATION</h3>
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="white-box" style="width: 70%; vertical-align: bottom; padding: 10px;">
+                                <div style="margin: 0; word-break: break-word; font-size: 8px;line-height: 15px;    width: 90px; font-weight: 400; text-transform: uppercase;">
+                                    <%=firstName%>,<%= lastName %> <br/>
+                                    <%= streetAddress %> , <%= city %> <br/>
+                                    <%= province %>-<%= postalCode %>  
+                                  </div>                            
+                                <p style="margin: 0; word-break: break-all; font-size: 8px; font-weight: 400; text-transform: uppercase;">HOME PHONE : <%=telephone%></p>
+                                <p style="margin: 0; word-break: break-all; font-size: 8px; font-weight: 400; text-transform: uppercase;">work PHONE : <%=telephone%></p>
+                            </td>
+                            <td class="white-box" style="width: 30%; vertical-align: top;padding: 10px; ">
+                                <h4 style="margin: 0; word-break: break-all; font-size:8px; font-weight: 600; margin-bottom: 15px;">Contract No : <%=contractNumber%></h4>   
+                                <h4 style="margin: 0; word-break: break-all; font-size:8px; font-weight: 600;">Total Price : <%=subTotal%></h4>                            
+                                <p style="margin: 0; word-break: break-all; font-size: 8px; font-weight: 400;">(Excluding Taxes)</p>
+                            </td>
+                        </tr>
+                        <tr></tr>
+                    </tbody>
+                </table>
+
+
+                <table style=" border-collapse: collapse; margin:auto; width: 100%;">
+                    <thead style="background:#d9d9d9; ">
+                        <tr style="border-bottom: 2px solid #000; border-top: 2px solid #000;">
+                            <th colspan="2" class="white-box" style="">
+                                <h3 style="word-break: break-all; font-size: 8px;margin: 0; padding:4px; text-align: left; font-weight: 600; text-transform: uppercase;">DEALER INFORMATION</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="white-box" style="width: 50%; vertical-align: top;">                            
+                                <div style="margin: 0; word-break: break-word; font-size: 8px;line-height: 15px;    width: 90px; font-weight: 400; text-transform: uppercase;">
+                                    <%=dealerFirstName%>,<%=dealerLastName%> <br/>
+                                    <%=dealerStreetAddress%><br/>
+                                    <%=dealerProvience%>   
+                                  </div>
+                            </td>
+                            <td class="white-box" style="width: 50%; vertical-align: top;padding: 10px; ">
+                                <h4 style="margin: 0; word-break: break-all; font-size: 8px; font-weight: 600; margin-bottom:20px;"> Dealer Legal Name : <%=dealerName%> </h4>   
+                                <h4 style="margin: 0; word-break: break-all; font-size: 8px; font-weight: 600; margin-bottom: 5px;"> Registration No : <%=dealerNumber%></h4>                            
+                                <h4 style="margin: 0; word-break: break-all; font-size:8px; font-weight: 600;  margin-bottom: 5px;"> Salesperson : <%=salesFirstName%> <%=salesLastName%></h4>   
+                                <h4 style="margin: 0; word-break: break-all; font-size: 8px; font-weight: 600;  margin-bottom: 5px;"> Salesperson Registration No : <%=registrationNumber%></h4>   
+                            </td>
+                        </tr>
+                        <tr></tr>
+                    </tbody>
+            
+                </table>
+
+                <table style=" border-collapse: collapse; margin:auto; width: 100%;">
+                    <thead style="background:#d9d9d9; ">
+                        <tr style="border-top: 2px solid #000; border-bottom: 2px solid #000;">
+                            <th colspan="2" class="white-box" style="">
+                                <h3 style="word-break: break-all; font-size: 8px;margin: 0; padding:4px; text-align: left; font-weight: 600; text-transform: uppercase;">VEHICLE INFORMATION</h3>
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width: 100%;">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="width: 20%; margin: 0; word-break: break-all; font-size: 8px; font-weight: 600;  padding: 5px;"> Year <%= unitYear %></td>
+                                        <td style="width: 20%; margin: 0; word-break: break-all; font-size:8px; font-weight: 600;  padding: 5px;"> Make: <%= unitMake %></td>
+                                        <td style="width: 20%; margin: 0; word-break: break-all; font-size: 8px; font-weight: 600;  padding: 5px;"> Model: <%= unitModel %></td>
+                                        <td style="width: 20%; margin: 0; word-break: break-all; font-size:8px; font-weight: 600;  padding: 5px;"> Odometer: <%=unitOdometer%> </td>
+                                        <td style="width: 20%; margin: 0; word-break: break-all; font-size:8px; font-weight: 600;  padding: 5px;"> Price: <%=unitPurchasePrice%></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" style=" margin: 0; word-break: break-all; font-size:8px; font-weight: 600;  padding: 5px;"> VIN: <%=unitPurchasePrice%> </td>
+                                        <td colspan="3" style=" margin: 0; word-break: break-all; font-size:8px; font-weight: 600;  padding: 5px;"> Lineholder: </td>                                  
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="" style=" text-align: center; background: #d9d9d9; border: 2px solid #000;word-break: break-all; font-size:8px; padding: 4px;font-weight: 600; text-transform: uppercase;
+            -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1); -moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1); box-shadow: 5px 5px 0px 0px rgba(0,0,0,1); ">
+                PROTECTION PROGRAM PURCHASED <span style="text-transform: capitalize; font-size:8px;">(see Section C for Covered Components)</span>
+            </div>
+
+            <div class="" style="float:left;width:100%;clear:both; ">
+                <div class="" style="float:left;width:49%;">
+                    <h3 style="text-align:center;;background: #d9d9d9;
+                    border: 2px solid #000;font-size: 8px;    padding: 4px;">Section C - Specific Covered Components</h3>
+                    <ul style="margin:0;float: left;">
+                        <li style="font-size:7px;">Engine</li>
+                        <li style="font-size:7px;">Differential</li>
+                        <li style="font-size:7px;">Roadside Assistance</li>
+                        <li style="font-size:7px;">Seals & Gaskets</li>
+                        <li style="font-size:7px;">AWD/4x4</li>
+                    </ul>
+                    <ul style=" margin:0;   float: left;">
+                        <li style="font-size:7px;">Transmission</li>
+                        <li style="font-size:7px;">$2500 per claim</li>
+                        <li style="font-size:7px;">Towing</li>
+                        <li style="font-size:7px;">$100 deductible</li>
+                    </ul>
+                </div>
+                <div class="" style="float:right;width:49%">
+                    <h3 style="text-align:center;background: #d9d9d9;
+                    border: 2px solid #000;font-size:8px;    padding: 4px;">Client Care Benifit Program</h3>
+                    <p style="text-align: center;margin:0px;font-size:8px;">Benefits take effect immediately</p>
+                    <ul style="width: 45%;
+                    margin: 0 auto;">
+                        <li style="font-size:7px;">Alignment Inspection</li>
+                        <li style="font-size: 7px;">Lost/Damaged Key Replacement</li>
+                        <li style="font-size: 7px;">Dent and Ding Protection</li>
+                        <li style="font-size: 7px;">Tire and Rim Protection</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="" style="margin-top: 7px;
+            float: left;
+            width: 100%;text-align: center; background: #d9d9d9; border: 2px solid #000;word-break: break-all; font-size: 8px; padding:5px;font-weight: 600; text-transform: uppercase;">
+                please refer to Agreement Terms & Conditions for Complete Coverage Details
+            </div>
+
+         </div>
+         <div class="bottom" style="margin-top:7px;  float: left;
+         width: 100%;    border-top: 2px solid #ccc;width: 96%;padding: 0px 15px; bottom: 0;">
+            <h3 style="float:left;font-family: 'Poppins', sans-serif;font-weight:600;font-size:8px;">
+                <span>Page 1 of 4</span>
+                <span style="font-family: 'Poppins', sans-serif;font-weight:600;font-size:7px;margin-left:15px;">Intial(s)</span>
+            </h3>
+            <div style="float:right;">
+               <h4 style="font-family: 'Poppins', sans-serif;font-weight:600;font-size:7px;margin-bottom:0px;    text-align: right;">
+                  NationAll Auto Protection | 4800 Dundas Street West, Suite 207, Toronto, Ontario, M9A 1B1 | HST# 735258899RT001
+               </h4>
+               <h4 style="font-family: 'Poppins', sans-serif;font-weight:600;font-size:7px;margin-top:2px;    text-align: right;">
+                NationAll Auto Protection V09.27.19
+               </h4>
+           </div>
+           <p style="  width: 225px; text-align: center; font-family: 'Poppins', sans-serif;font-weight:500;font-size: 8px;    margin: 0 auto;
+           margin-top: 22px;">
+            LALANDE, MARIE 2020-11-11 19:17:59
+    </p>
+       </div>
+       <!-- terms 1 -->
+       <div class="col-md-12 outer-section-one" style="clear:both; float: left; width: 96%;
+       margin-top: 30px;
+       padding: 0px 16px">
+        <div class="" style="background: #d9d9d9;
+        border: 2px solid #000;margin: 0;font-size: 10px; margin-top:15px; font-family: 'Poppins', sans-serif;padding:4px;font-weight:600;text-transform:uppercase;">
+            Agreement Terms and conditions
+        </div>
+        <div class="outer-div">
+            <h3 style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:9px;">
+                <span>Administrator -Nation All Protection</span>
+                <span style="margin-left:15px;">Issuer -Nation All Protection</span>
+            </h3>
+            <div class="hed">
+                <h3 style="margin-top:0px;margin-bottom:0px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;">Coverage</h3>
+                <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                   For the payment received by NATIONALL, so long as that the Client follows the terms in this agreement, NATIONALL agrees to pay the sensible costs for authorized repairs of Covered
+                   Parts which have caused a mechanical failure.
+                    </p>
+            </div>
+            <div class="hed">
+               <h3 style="margin-top:0px;margin-bottom:0px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;">Terms</h3>
+               <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                   Powertrain coverage begins after manufacturer warranty expires by either term or mileage consideration. If manufacturer warranty is expired as of this contact date, coverage begins
+immediately. Powertrain coverage expires at the time stated or when the unit has traveled to the specified kilometers, whichever occurs first. </p>
+           </div>
+           <div class="hed">
+               <h3 style="margin-top:0px;margin-bottom:0px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;text-decoration:underline;">1.PowerTrain</h3>
+               <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                   <span style="font-weight:600;">a.Powertrain - 12 months / 20,000 km / $2500.00 per claim Protection. </span>
+                   <span>This coverage is available on New or Used or Demo vehicles up to 179,999 kms</span>
+               
+               </p>
+               <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                   <span style="font-weight:600;">b. Powertrain - 24 months / 40,000 km / $2500.00 per claim Protection. </span>
+                   <span>This coverage is available on New or Used or Demo vehicles up to 160,000 kms.</span>
+               
+               </p>
+               <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;margin-bottom:4px;">
+                   <span style="font-weight:600;">c. Powertrain - 36 months / 20,000 km / $2500.00 per claim Protection. </span>
+                   <span>This coverage is available on New or Used or Demo vehicles up to 160,000 kms.</span>
+               
+               </p>
+           </div>
+           <div class="hed">
+               <h3 style="font-style:italic;margin-top:0px;margin-bottom:0px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;">
+                   Parts coverage:</h3>
+                  
+                    <h3 style="font-style:italic;margin-top:1px;margin-bottom:0px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;">
+                       TRANSMISSION & Differntial Parts</h3>
+               <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;margin-bottom:4px;">
+                   Only certain parts are covered if lubricated internally: Main Bearings, Crankshaft, heads, gears attached to the crankshaft, rods or bearings that are connected only,
+                   camshafts and its bearings and gears, pistons, intake and exhaust valves,valve covers, rocker arms, timing chains (not belts), oil pump and shaft.
+                   <br/>
+                   ONLY when damaged from inside and within: valve bodies, housings, gears, oil pump and pan, torque converters. This plan does not include external shifters or linkage, manual clutches
+                   or bearings.
+                   <br/>
+                   Transaxles on Front Wheel Drive Vehicles are covered for internally lubricated parts only if damaged from inside. Wheel bearings are not covered under this plan.
+                </p>
+           
+           <h3 style="font-style:italic;margin-top:4px;margin-bottom:0px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;">
+               ALL WHEEL DRIVE & 4X4</h3>
+           <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;margin-bottom:4px;">
+               Gears, chain mounts and the case are covered.</p>
+               <h3 style="font-style:italic;margin-top:4px;margin-bottom:0px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;">
+                   MAJOR GASKETS & SEALS</h3>
+           <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;margin-bottom:4px;">
+               Only seals and gaskets listed as follows will have coverage: cylinder head gasket(s), intake manifold gaskets, front and rear main oil seals, transmission seals, pinion seal and axle seals.
+               Seepage and or sweating and or weeping are not covered in any way under this contract. Slight leakage of seals or gaskets is considered normal, and is not considered to be MAJOR or
+               cause engines or transmissions to perform out of specification. </p>
+          </div>
+          <div class="hed">
+           <h3 style="margin-top:0px;margin-bottom:0px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;">2.Factory Protection Top Up</h3>
+           <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;margin-bottom:4px;">
+               This coverage may only be purchased if your vehicle is still under the factory COMPREHENSIVE warranty mileage and time period of 36 mths/60,000kms. Maximum term from warranty
+               in-service date is 5 year or 100,000 kms. With TOP UP parts coverage beginning after the manufacturer warranty expiration by either time or mileage. </p>
+           </div>
+           <div class="hed">
+               <h3 style="margin-top:0px;margin-bottom:4px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;
+               text-transform:uppercase;text-decoration:underline;">1.Parts Coverage</h3>
+               <h3 style="margin-top:0px;margin-bottom:4px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;">
+                   Break System 
+                   <span style="text-transform:lowercase;margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                       Master cylinder, wheel cylinders, return springs, front and rear calipers, hard lines, flex lines, brake linkages. ABS components covered: brake control module,
+                       accumulators and pressure modulator valve assembly;
+                   </span>
+               </h3>
+               <h3 style="margin-top:0px;margin-bottom:4px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;">
+                   AIR CONDITIONING SYSTEM
+                   <span style="text-transform:lowercase;margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size: 6px;">
+                       (Be advised that only the Major Components are covered)
+                       <br/>
+                       Compressors, clutch assemblies, condensers, evaporator and accumulator (no seals are not covered, or Refrigerant)
+                    </span>
+                </h3>
+                <h3 style="margin-top:0px;margin-bottom:4px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;">
+                   STEERING SYSTEM 
+                   <span style="text-transform:lowercase;margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                       Power steering pump and pulley, Rack and pinion, fluid lines, cooler, steering gear, main shaft, pitman arms, idler arms, center link.
+                   </span>
+               </h3>
+               <h3 style="margin-top:0px;margin-bottom:4px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;">
+                   ELECTRONIC TECH
+                    <span style="text-transform:lowercase;margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                       Electronic ignition computer, control modules, fuel injection computer control modules, door control lock actuators, power door lock actuator motor and switches, pwr
+                       window motors, electronic trunk release actuator, exterior directional mirror motors, convertible top motors. (No sensors are covered).
+                   </span>
+               </h3>
+               <h3 style="margin-top:0px;margin-bottom:4px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;">
+                   ELECTRICAL SYSTEM 
+                   <span style="text-transform:lowercase;margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                       Starter motor and solenoid, alternator, electronic ignition coils, wiper motors, washer motors, horn (excluding switch and wiring).
+                   </span>
+               </h3>
+               <h3 style="margin-top:0px;margin-bottom:4px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;">
+                   ROADSIDE ASSISTANCE PROGRAM NATIONALL 
+                   <span style="text-transform:lowercase;margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                       Auto Protection will reimburse you up to $50 dollars per event with a maximum of $250 during the life of this contract. (receipts are
+                       required for repayment) for the following events:
+                       <ul style="padding-left:15px">
+                           <li style="list-style: none;">Battery boosting service to start a Customer’s covered vehicle.</li>
+                           <li style="list-style: none;">Flat tire service for a Customer’s covered vehicle for the repair or installation of spare.</li>
+                           <li style="list-style: none;">Vehicle entry service (locksmith services) for a Customer’s covered vehicle should the keys be lost or locked in the vehicle.</li>
+                       </ul>
+                   </span>
+               </h3>
+               <h3 style="margin-top:0px;margin-bottom:4px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;">
+                   TOWING NATIONALL 
+                   <span style="text-transform:lowercase;margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                       Auto Protection will reimburse you up to a $50 per event for towing expenses sustained due to a mechanical breakdown of components that are covered in this
+                   Document Only.
+                   <br/>
+                   A receipt from a licensed towing company must accompany all submissions for repayment.
+               </span>
+               </h3>
+               <h3 style="margin-top:0px;margin-bottom:2px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;">
+                   CARE AND UPKEEP REQUIREMENTS OF THE CLIENT:
+               </h3>
+               <p style="text-transform:initial;margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                   The coverage described in this document is only valid if: the Client maintains the vehicle up to the manufacturer’s required and recommended levels to prevent the vehicle from
+                   mechanical breakdown, and also maintaining the vehicle and servicing it at the following intervals as follows at a licensed mechanical shop or dealership (home-performed oil changes
+                   are not permitted):
+                   <ul style="list-style: none;margin:0;padding-left:15px;">
+                       <li style="font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">ONE year or 20000 kms, from the date of purchase: whichever occurs first, you must have your transmission fluid and filter changed.</li>
+                       <li style="font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">Every 3 months or 6000 kms (or at the manufacturer recommended interval): Change the oil and oil filter, check and top-up or change all fluids and filters.</li>
+                       <li style="font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">You must retain all bills and invoices displaying clearly all of the service that you have completed. The documents must have the VIN and odometer readings</li>
+                   </ul>
+               </p>
+               <h3 style="margin-top:0px;margin-bottom:4px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;">
+                   NATIONALL CLIENT CARE BENEFITS PROGRAM - 
+                   <span style="text-transform:lowercase;margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                       All Nationall Client Care benefits begin on the date of signing this contract. Coverage begins immediately. As a contact holder you are
+                       entitled to the following benefits, only available at your selling dealership:
+                   </span>
+               </h3>
+               <h3 style="margin-top:0px;margin-bottom:4px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;">
+                   ALIGNMENT INSPECTION - 
+                   <span style="text-transform:lowercase;margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                       Nationall Auto Protection will cover one (1) complimentary alignment inspection from the date of signing
+                   </span>
+               </h3>
+               <h3 style="margin-top:0px;margin-bottom:4px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;">
+                   LOST KEY COVERAGE - 
+                   <span style="text-transform:lowercase;margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                       National Auto Protection will reimburse the contact holder for one (1) lost key replacement up to $50 from the date of signing
+                   </span>
+               </h3>
+               <h3 style="margin-top:0px;margin-bottom:4px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;">
+                   DENT AND DING PROTECTION -
+                   <span style="text-transform:lowercase;margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                       National Auto Protection will reimburse the contact holder for one (1) paint-less dent repair (PDR) up to $75 from the date of signing.
+                       Dent/Ding must be removable via PDR, no larger than 2" in diameter, not on a crease and must not require body work to repair.
+                   </span>
+               </h3>
+               <h3 style="margin-top:0px;margin-bottom:4px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;">
+                   TIRE AND RIM PROTECTION -
+                   <span style="text-transform:lowercase;margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                       National Auto Protection will reimburse the contact holder for one (1) Tire and Rim repair up to $50 from the date of signing. This coverage is limited to repair only.
+                       Tire and Rim replacement is not coverage under this protection
+                   </span>
+               </h3>
+               </div> 
+           </div>
+        </div>
+   </div>
+   <div class="bottom" style="margin-top:7px;  float: left;
+   width: 100%;    border-top: 2px solid #ccc;width: 96%;padding: 0px 15px; bottom: 0;">
+      <h3 style="float:left;font-family: 'Poppins', sans-serif;font-weight:600;font-size:8px;">
+          <span>Page 1 of 4</span>
+          <span style="font-family: 'Poppins', sans-serif;font-weight:600;font-size:7px;margin-left:15px;">Intial(s)</span>
+      </h3>
+      <div style="float:right;">
+         <h4 style="font-family: 'Poppins', sans-serif;font-weight:600;font-size:7px;margin-bottom:0px;    text-align: right;">
+            NationAll Auto Protection | 4800 Dundas Street West, Suite 207, Toronto, Ontario, M9A 1B1 | HST# 735258899RT001
+         </h4>
+         <h4 style="font-family: 'Poppins', sans-serif;font-weight:600;font-size:7px;margin-top:2px;    text-align: right;">
+          NationAll Auto Protection V09.27.19
+         </h4>
+     </div>
+     <p style="  width: 225px; text-align: center; font-family: 'Poppins', sans-serif;font-weight:500;font-size: 8px;    margin: 0 auto;
+     margin-top: 22px;">
+      LALANDE, MARIE 2020-11-11 19:17:59
+</p>
+ </div>
+       <!-- terms 2 -->
+       <div class="col-md-12 outer-section-one" style="clear:both;float: left; width: 96%;
+       margin-top: 30px;
+       padding: 0px 16px">
+        <div class="" style="border-bottom: 2px solid #ccc;font-size:9px;text-align:right;
+        font-family: 'Poppins', sans-serif;padding:8px;font-weight:600;text-transform:uppercase;margin-top:12px;">
+           Contract No:
+        </div>
+        <div class="outer-div">
+            
+            <div class="hed">
+                <h3 style="margin-top:4px;margin-bottom:0px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:6px;text-transform:uppercase;font-style:italic;">CLAIMS</h3>
+                <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                   If a breakdown occurs under the terms and conditions of this document, the following procedure must be followed for “covered only” circumstances for a payment claim: </p>
+                   <ul style="margin-bottom:0px;padding-left:15px;margin-top:0px;list-style: none;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px">
+                       <li>Contact the NATIONALL claims department immediately before approving any work to be performed: 1-877-401-3423.</li>
+                       <li>You will be required to provide your VIN# and current odometer reading before proceeding to call.</li>
+                       <li>You will be directed to the nearest NATIONALL authorized repair facility, or you may be granted permission to repair the unit elsewhere, however PRIOR APPROVAL BY
+                           NATIONALL will be required.</li>
+                       <li>NATIONALL does not cover any diagnostics</li>
+                       <li>If NATIONALL is satisfied that you have met all terms and conditions, you will be issued an approval number and amount to proceed with the required and covered repairs only.</li>
+                       <li>NATIONALL will pay the authorized repair facility directly, minus deductibles.</li>
+                       <li>NATIONALL will always reserve the right to refuse any and all repairs and or estimates that they have judged unreasonable.</li>
+                       <li>NATIONALL will always reserve the right to examine the vehicle within five (5) days of receipt of a claim request.</li>
+                   </ul>
+                   
+            
+               <h3 style="margin-top:0px;margin-bottom:0px;font-family: 'Poppins', sans-serif;
+               font-weight:600;font-size:6px;text-transform:uppercase;">HOURLY LABOUR RATES</h3>
+               <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                   If you have repairs made at the Dealership that you purchased your vehicle from, the labor rate is covered at $100 per hour, all other repair facilities are covered at $70 per hour. Hours to
+                   be determined by NationALL using industry acceptable rate guides. </p>
+           
+               <h3 style="margin-top:0px;margin-bottom:0px;font-family: 'Poppins', sans-serif;
+               font-weight:600;font-size:6px;text-transform:uppercase;">DEDUCTIBLES</h3>
+               <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                   All of NationAll Service Plans come with a mandatory $100 deductible. If a claim is approved under the terms of this document, then the customer will pay for the diagnostic and
+                   deductible. </p>
+           
+               <h3 style="margin-top:0px;font-family: 'Poppins', sans-serif;
+               font-weight:600;font-size:6px;text-transform:uppercase;margin-bottom:0px;">LIMITATION OF ANY AND ALL LIABILITY</h3>
+               <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;margin-bottom:0px;">
+                   The maximum liability to Nationall for the term of this plan will not exceed the total of the
+                    maximum claim amount per occurance multiplied by 2.5.
+               </p>
+               <h3 style="margin-top:0px;font-family: 'Poppins', sans-serif;
+               font-weight:600;font-size:6px;text-transform:uppercase;margin-bottom:0px;">EXCLUSION</h3>
+               <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                   Any Coverage that is stated under this Agreement: does not cover expenses arising out of mechanical breakdown 
+                   which are caused by, or due to:           </p>
+                   <ul style="padding-left:15px;margin-bottom:0px;margin-top:0px;list-style: none;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px">
+                       <li style="margin-bottom:1px;">
+                           Failure of non-covered part. Coverage shall also exclude: cost of repairs and replacement (including labour) of Covered Parts where their repair or replacement is due to failure of a
+                           non-covered part. If a part is not covered, then the labour to repair or replace the part is also not covered nor is damage to a covered part caused by non-covered part. Abuse,
+                           neglect, upset or falling object, theft, collision, road debris (rocks, stones etc.), racing, explosion, fire
+                           , water, flood, vandalism, or lack of normal maintenance; or
+                       </li>
+                       <li style="margin-bottom:1px;">
+                           Any vehicle used for hire to the public, any vehicle equipped with a snowplow, emergency vehicles, courier or delivery vehicles daily rental, other purposes, or commercial use unless
+                           the vehicle has been accepted by NATIONALL in the “Commercial Use” coverage option; or
+                       </li>
+                       <li style="margin-bottom:1px;">
+                           For damage caused or contributed to by overheating, freezing and/or loss of coolants or lubricants including damage caused by failure of water hoses, radiators or
+                           transmission cooler lines; or Contamination of fluids, coolants, fuels or lubricants; or
+                       </li>
+                       <li style="margin-bottom:1px;">
+                           Repairs of carbonized or burned valves and/or seized piston rings or resultant breakage; or Due to normal wear and tear. Note: Normal wear and tear shall be deemed to include, but
+                           not limited to repairs or replacement of valves and/or rings where the purpose, in whole or in part, is to raise engine compression where the only condition is oil consumption; or
+                           Any adjustments, alignments, or tune-ups required as part of a covered repair or necessary to a covered repair; or
+                       </li>
+                       <li style="margin-bottom:1px;">
+                           Vehicle odometer reading have been altered so as to reflect an incorrect or misleading kilometer/mile reading or if an inoperable odometer is not repaired by customer immediately;
+                           or any TSB (technical service bulletin) from the manufacturer. Damage as a result or contributed to by vehicle pulling a trailer or other vehicle weighing more than 1000
+                           kilograms/2200 pounds, unless vehicle is equipped with a factory installed or authorized tow package by the selling dealer; or
+                       </li>
+                       <li style="margin-bottom:1px;">
+                           Damage caused or contributed to by the Customer’s failing to use all reasonable means to protect vehicle from further damage following a breakdown, or
+                       </li>
+                       <li style="margin-bottom:1px;">
+                           Any mechanical breakdown caused by a defect that the manufacturer has publicly or otherwise announced it would correct, and has not been done, or any mechanical breakdown
+                           covered by a manufacturer’s warranty or recall, or any repair’s warranty or guarantee, or any TSB (technical service bulletin) from the manufacturer or
+                       </li>
+                       <li style="margin-bottom:1px;">
+                           Any consequential and/or resultant loss, damage, injury or death (including any costs or expenses, legal or otherwise relative thereto) of any nature whatsoever suffered by any
+                           person, firm or corporation, arising directly or indirectly from any repairs, delays or failures to make repairs covered under this agreement, including but not so as to restrict the
+                           generality of the definition of “repair” herein, labour and workmanship incidental to such repairs; or
+                       </li>
+                       <li style="margin-bottom:1px;">
+                           Rust or corrosion, or
+                       </li>
+                       <li style="margin-bottom:1px;">
+                           Problems or conditions existing prior to the purchase of the vehicle and normally covered by this Agreement, or
+                       </li>
+                       <li style="margin-bottom:1px;">
+                           Claim procedures not followed as required by Part 6 herein; or
+                       </li>
+                       <li style="margin-bottom:1px;">
+                           NATIONALL shall have no obligation under this Agreement where Customer has failed to maintain the Covered Vehicle in strict compliance with the maintenance obligations of the
+                           Customer, as set forth in Part 5 of this Agreement, or
+                       </li>
+                       <li style="margin-bottom:1px;">
+                           Repairs made without NATIONALL’s approval.
+                       </li>
+                   </ul>
+    
+               <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                   Vehicles must be DOT certified by the selling dealer at time of sale.
+                   <br/>
+                   All plans sold, other than at the time of sale, require a current DOT safety certificate and Condition Report completed by the selling dealer. (Form supplied by NATIONALL)
+                   <br/>
+                   Coverage only provided once the Manufacturer’s warranty has expired. Except for the NEW and DEMO plans that have certain covered items from selling date.
+                   <br/>
+                   Only Manufacturer’s modifications are acceptable.
+                   <br/>
+                   NationAll is second payer to all other coverages.
+               </p>
+               <h3 style="margin-top:0px;margin-bottom:0px;font-family: 'Poppins', sans-serif;
+               font-weight:600;font-size:8px;text-transform:uppercase;font-style:italic;">MISCELLANEOUS</h3>
+               <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                   Transfer of your contract:
+                   <br/>
+                   You may apply to transfer your contract to someone whom you sell or otherwise transfer your vehicle while this contract is still in force. This can be done only if the transfer request is
+                   made within thirty (30) days of the sale or transfer of your vehicle, the two-hundred and fifty dollar ($250) transfer fee (plus applicable taxes) is paid and the transfer is approved by
+                   the Administrator; this contract can only be transferred once and must be initiated by the original contract holder. TRANSFER MAY ONLY BE MADE TO PRIVATE SALES AND NOT IF
+                   TRADED IN THROUGH A DEALER.
+                   <br/>
+                   The following must be submitted to the Administrator within thirty (30) days of the change of ownership to a subsequent individual purchaser:
+                   <br/>
+                   Copy of original contact and application page;
+                   <br/>
+                   Copy of bill of sale or signed registration form showing transfer of title;
+                   <br/>
+                   Completed transfer request form, including name and address of new owner, date of sale to new owner, current odometer reading as verified by dealer signature; and
+                   <br/>
+                   Two-hundred and fifty dollar ($250) transfer fee (including applicable taxes) made payable to NationAll.
+                   <br/>
+                   Any remaining manufacturer’s warranty must also be transferred at the same time as vehicle ownership transfer. Copies of all maintenance records showing actual oil changes and
+                   manufacturers recommended maintenance given to the new owner. These maintenance records must be retained along with future maintenance records the new owner performs in
+                   accordance with the maintenance requirements of this contract. If necessary, these documents will be verified by the administrator at the time a claim occurs.
+                   <br/>
+                   This contract cannot be transferred if the title of your vehicles passes through an entity other than the subsequent buyer, or your vehicle is sold or trader to a dealership, leasing agency or
+                   entity/individual in the business of selling vehicles, unless your vehicle is still within the manufactures’ comprehensive complete vehicle warranty.
+                   Transfers to United States addresses are not permitted.
+               </p>
+           </div>
+          
+   </div>
+   </div>
+   <div class="bottom" style="margin-top:7px;  float: left;
+   width: 100%;    border-top: 2px solid #ccc;width: 96%;padding: 0px 15px; bottom: 0;">
+      <h3 style="float:left;font-family: 'Poppins', sans-serif;font-weight:600;font-size:8px;">
+          <span>Page 1 of 4</span>
+          <span style="font-family: 'Poppins', sans-serif;font-weight:600;font-size:7px;margin-left:15px;">Intial(s)</span>
+      </h3>
+      <div style="float:right;">
+         <h4 style="font-family: 'Poppins', sans-serif;font-weight:600;font-size:7px;margin-bottom:0px;    text-align: right;">
+            NationAll Auto Protection | 4800 Dundas Street West, Suite 207, Toronto, Ontario, M9A 1B1 | HST# 735258899RT001
+         </h4>
+         <h4 style="font-family: 'Poppins', sans-serif;font-weight:600;font-size:7px;margin-top:2px;    text-align: right;">
+          NationAll Auto Protection V09.27.19
+         </h4>
+     </div>
+     <p style="  width: 225px; text-align: center; font-family: 'Poppins', sans-serif;font-weight:500;font-size: 8px;    margin: 0 auto;
+     margin-top: 22px;">
+      LALANDE, MARIE 2020-11-11 19:17:59
+</p>
+ </div>
+       <!-- terms 3 -->
+       <div class="col-md-12 outer-section-one" style="height: 730px; float: left; width: 96%; padding: 0px 16px; margin-top: 50px;">
+        <div class="" style="border-bottom: 2px solid #ccc;font-size: 12px;text-align:right;
+        font-family: 'Poppins', sans-serif;padding:8px;font-weight:600;text-transform:uppercase;">
+           Contract No:
+        </div>
+        <div class="outer-div">
+            
+            <div class="hed">
+                <h3 style="margin-top:10px;margin-bottom:4px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:8px;text-transform:uppercase;">Cancellation</h3>
+                <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:8px;">
+                 A. We have the right to cancel this Policy:
+                   <ul style="margin-top:0px;list-style: none;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px">
+                       <li>1.For any reason in the first 30 days and provide You with a full refund of any premiums paid;</li>
+                      <li>Or</li>
+                      <li>2.For any act of fraud, or material violation of the terms and/or conditions of this Policy by You.</li>
+                   </ul>
+                    </p>
+                    <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                       We will provide You 30 days’ written notice prior to the effective cancellation date, said notice specifying the reason for cancellation. The calculation for reimbursement of any unearned
+                       premium will be made pro-rata based on the number of month(s) remaining in the Term and, where permissible under
+                       applicable laws, deducting a $50 administration fee.
+                    </p>
+                    <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                       B. This Agreement may be cancelled by you, for a full refund through the selling dealer by notifying NATIONALL in writing within 10 days of date when vehicle was sold and no claim
+                       having been made under this Agreement, Subject to a $100 Administration fee.
+                   </p>
+                  
+               <h3 style="margin-top:0px;margin-bottom:4px;font-family: 'Poppins', sans-serif;
+               font-weight:600;font-size:8px;">Examination</h3>
+               <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                   NATIONALL reserves the right to examine any Covered Vehicle within 10 days of the date of any claim being made hereunder. Such inspection will be conducted by an independent expert
+                   selected by NATIONALL and Customer and in the event of any disagreement between NATIONALL and Customer as to NATIONALL’s liability hereunder, the decision of such
+                   independent expert shall be binding upon both NATIONALL and the Customer.
+                   <br/>
+                   This Agreement shall be binding upon and ensure to the benefits of the heirs, successors, and permitted assigns of NATIONALL and the Customer.
+                   <br/>
+                   This Agreement shall be governed by the laws of the Province or Sate of the Selling Dealer.
+                </p>
+           
+                <h3 style="margin-top:0px;margin-bottom:4px;font-family: 'Poppins', sans-serif;
+                font-weight:600;font-size:6px;font-style: italic;">
+                THE PRECISE COVERAGE FOR THIS Service Plan IS LISTED ON THE FRONT PAGE IN BULLET FORM.
+               </h3>
+               <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                   This application together with the required fees shall be submitted to NATIONALL within ten (10) days of the date hereof. If accepted by NATIONALL this application shall constitute the
+                   entire agreement between Applicant and NATIONALL, and shall be referred to as the “Agreement.” Applicant hereby acknowledges and understands that neither Dealer, nor their
+                   respective employees, agents or representatives have authority to make any representation, promise, or warranty not contained herein and that NATIONALL shall not be liable for any
+                   unauthorized representation, promise or warranty. Applicant and Dealer hereby certify that all information contained in this application is true and correct as of the date of this
+                   application. In the event such information is determined to be incorrect or misleading, at NATIONALL’s option, any Agreement resultant of this Application shall be void from the outset.
+                   <br/>
+                   <br/>
+                   THE UNDERSIGNED APPLICANT HEREBY ACKNOWLEDGES HAVING READ AND UNDERSTOOD THE TERMS AND CONDITIONS OF THIS AGREEMENT, AND AGREES BE
+                   BOUND BY ITS TERMS. APPLICANT FURTHER ACKNOWLEDGES HAVING SELECTED THE COVERAGE INDICATED ON THE FRONT PAGE OF THIS DOCUMENT.
+                   <br/>
+                   <br/>
+                   NATIONALL is a second Payor to any other Warranty coverage that may be on this vehicle.
+                   <br/>
+                   <br/>
+                       In order to maintain coverage, I acknowledge that maintenance must be performed every 3 months or 6000 km whichever occurs first or as outlined in the manufacturers maintenance
+                       program for the subject vehicle. Failing to do so will void this warranty and no refunds will be issued. This information is available to you either online from the manufacture’s website,
+                       from your owners manual, or by asking your selling dealer. Maintenance is entirely your responsibility.
+                       <br/>
+                       <br/>
+                       NATIONALL is a registered Service Plan division of 401 Auto RV Canada Inc.
+                       <br/>
+                       This Warranty is not insured or underwritten by a third party.
+               </p>
+               <h3 style="margin-top:0px;font-family: 'Poppins', sans-serif;
+                font-weight:600;font-size:6px;font-style: italic;">
+                PRIVACY
+               </h3>
+               <p style="margin:0px;font-family: 'Poppins', sans-serif;font-weight:400;font-size:6px;">
+                   By signing this contact, you consent to the collection, use, disclosure and retention of your personal information by NationAll Auto Protection and it's parent company, 401 Auto RV Canada
+                   Inc in accordance with this Privacy Policy (www.nationallautoprotection.com/privacy) and as otherwise permitted by applicable law. As the contract holder you agree to opt-in to future
+                   communications regarding promotions for both NationAll Auto Protection products and 401 Auto RV Canada Group vehicle promotions. You may withdraw your consent at any time,
+                   subject to legal or contractual restrictions and on reasonable notice to NationAll Auto Protection, but then you might not be able to proceed with your intended interactions or transactions
+                   with NationAll Auto Protection or otherwise receive the full benefit of NationAll Auto Protection's products and services.
+               </p>
+           </div>
+          
+   </div>
+   </div>
+   <div class="bottom" style="margin-top:7px;  float: left;
+         width: 100%;    border-top: 2px solid #ccc;width: 96%;padding: 0px 15px; bottom: 0;">
+            <h3 style="float:left;font-family: 'Poppins', sans-serif;font-weight:600;font-size:8px;">
+                <span>Page 1 of 4</span>
+                <span style="font-family: 'Poppins', sans-serif;font-weight:600;font-size:7px;margin-left:15px;">Intial(s)</span>
+            </h3>
+            <div style="float:right;">
+               <h4 style="font-family: 'Poppins', sans-serif;font-weight:600;font-size:7px;margin-bottom:0px;    text-align: right;">
+                  NationAll Auto Protection | 4800 Dundas Street West, Suite 207, Toronto, Ontario, M9A 1B1 | HST# 735258899RT001
+               </h4>
+               <h4 style="font-family: 'Poppins', sans-serif;font-weight:600;font-size:7px;margin-top:2px;    text-align: right;">
+                NationAll Auto Protection V09.27.19
+               </h4>
+           </div>
+           <p style="  width: 225px; text-align: center; font-family: 'Poppins', sans-serif;font-weight:500;font-size: 8px;    margin: 0 auto;
+           margin-top: 22px;">
+            LALANDE, MARIE 2020-11-11 19:17:59
+    </p>
+       </div>
+       <!-- terms 4 -->
+
+    </body>
+</html>

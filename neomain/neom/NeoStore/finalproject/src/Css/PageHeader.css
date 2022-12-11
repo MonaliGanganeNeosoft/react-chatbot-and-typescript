@@ -1,0 +1,29 @@
+
+.navlink{
+    text-decoration: none;;
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+  }
+  .navlink:hover{
+    color: red;
+  }
+  .cartbutton{
+    position: absolute;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .navmargin{
+    margin-right: 50px;
+  }
+  .dropdownbtn{
+      position: absolute;
+      margin-left: 140px;
+    margin-right: 20px;
+  }
+  .prfil{
+      margin-right: 200px;
+  }
+  .dropdown-menu{
+    position: absolute !important;
+  }

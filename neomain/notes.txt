@@ -1,0 +1,75 @@
+import React, { useEffect, useRef, useState } from "react";
+import { TextareaT } from "react-bootstrap-icons";
+import {
+  Card,
+  Col,
+  FormControl,
+  InputGroup,
+  Row,
+  FormLabel,
+  Button,
+  Alert,
+  Form,
+} from "react-bootstrap";
+import { useSnackbar } from "react-simple-snackbar";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { AddUser } from "../config/myService";
+import jwt_decode from "jwt-decode";
+
+const options = {
+  position: "top-center",
+  style: {
+    fontSize: "20px",
+    textAlign: "center",
+    color: "white",
+  },
+  closeStyle: {
+    color: "lightcoral",
+    fontSize: "16px",
+  },
+};
+export default function RegisterPage() {
+  const FirstName = useRef("");
+
+  const regForName = RegExp(/[A-Za-z ]+/);
+  const handle = (event) => {};
+  const setnull = (event) => {};
+  return (
+    <>
+      <div className="container-fluid allpadding">
+        <Row className="padding marginlogin mt-3">
+          <Col lg={3}>
+            <Col lg={6} className="formdata">
+              <Card className="bg-light">
+                <Form className="p-3 formdata">
+                  <FormLabel>
+                    <h3>Register to Neostore</h3>
+                  </FormLabel>
+                  <InputGroup className="mt-2 mb-2">
+                    <FormControl
+                      type="text"
+                      aria-describedby="basic-addon2"
+                      placeholder="First name"
+                      name="FirstName"
+                      ref={FirstName}
+                      onBlur={handle}
+                      onFocus={setnull}
+                    >
+                      <InputGroup.Text id="basic-addon2" className="bg-light">
+                        <TextareaT />
+                      </InputGroup.Text>
+                    </FormControl>
+                  </InputGroup>
+                </Form>
+              </Card>
+            </Col>
+          </Col>
+        </Row>
+      </div>
+    </>
+  );
+}
+
+
+https://drive.google.com/drive/folders/1L3MiIanAlfBBFgAfRKrFzdTbFjvmd_Sn

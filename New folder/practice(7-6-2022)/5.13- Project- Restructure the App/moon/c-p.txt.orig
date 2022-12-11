@@ -1,0 +1,9 @@
+hello
+<<<<<<< HEAD
+change in the master branch
+change in bugfix cp
+nice to see from master branch
+=======
+change in bugfix cp
+changes last in cp from bugfix cp
+>>>>>>> bugfix/c-p

@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iam-service-deployment
+  namespace: staging
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: iam-service
+  template:
+    metadata:
+      labels:
+        app: iam-service
+    spec:
+      containers:
+      - name: iam-service
+        image: 571981719758.dkr.ecr.ca-central-1.amazonaws.com/iam-service:staging_94
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        envFrom:
+        - secretRef:
+            name: dealers-secrets
+---
+apiVersion: v1
+kind: Service
+metadata: 
+  name: iam-service
+  namespace: staging
+  labels:
+    app: iam-service
+spec:
+  type: ClusterIP
+  ports:
+    - port: 8080
+      protocol: TCP
+      # targetPort: 3001
+  selector:
+    app: iam-service

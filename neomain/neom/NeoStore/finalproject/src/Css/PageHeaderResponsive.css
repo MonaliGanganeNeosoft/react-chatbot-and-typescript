@@ -1,0 +1,281 @@
+
+  @media screen and (max-width: 360px) and (min-width: 360px) {
+    .navlink{
+        width: 80px;
+        margin-left: 0px;
+    }
+    .navbar-nav{ 
+        width: 340px !important;
+    }
+     .cartbutton{
+     margin-left: 0px;
+     }
+     
+   .dropdownbtn{
+         position: relative;
+         margin-left: 285px;
+ }
+ .prfil{
+     margin-top: 10px;
+     margin-right: 30px;
+ }
+ .formwidth{
+     width: 336px;
+ }
+   }
+   
+   @media screen and (max-width: 376px) and (min-width: 374px) {
+     .navlink{
+         width: 80px;
+         margin-left: 0%;
+     }
+     .navbar-nav{ 
+         width: 360px !important;
+     }
+     .cartbutton{
+         margin-left: 0px;
+     }
+         
+       .dropdownbtn{
+             position: relative;
+             margin-left: 298px;
+     }
+     .prfil{
+         margin-top: 10px;
+         margin-right: 50px;
+     }
+     
+     .formwidth{
+         width: 351px;
+     }
+    }
+    
+   @media screen and (max-width: 415px) and (min-width: 413px) {
+     .navlink{
+         width: 80px;
+         margin-left: 0%;
+     }
+     .navbar-nav{ 
+      width: 390.4px;
+     }
+     .cartbutton{
+         margin-left: 0px;
+     }
+         
+       .dropdownbtn{
+             position: relative;
+             margin-left: 340px;
+     }
+     .prfil{
+         margin-top: 10px;
+         margin-right: 30px;
+     }
+     
+     .formwidth{
+         width: 408px;
+     }
+    }
+    
+   @media screen and (max-width: 391px) and (min-width: 389px) {
+     .navlink{
+         width: 80px;
+         margin-left: 0%;
+     }
+     .navbar-nav{ 
+      width: 366.4px;
+     }
+     .cartbutton{
+         margin-left: 0px;
+     }
+         
+       .dropdownbtn{
+             position: relative;
+             margin-left: 315px;
+     }
+     .prfil{
+         margin-top: 10px;
+         margin-right: 30px;
+     }
+     .formwidth{
+         width: 366.4px;
+     }
+    }
+ 
+    @media screen and (max-width: 394px) and (min-width: 392px) {
+     .navlink{
+         width: 80px;
+         margin-left: 0%;
+         margin-bottom: 4px;
+     }
+     .navbar-nav{ 
+        width: 369.6px;
+     }
+     .cartbutton{
+         margin-left: 0px;
+     }
+         
+       .dropdownbtn{
+             position: relative;
+             margin-left: 310px;
+     }
+     .prfil{
+         margin-top: 10px;
+         margin-right: 40px;
+     }
+     .formwidth{
+         width: 369.6px ;
+         margin-right: 8px;
+     }
+    }
+ 
+    @media screen and (max-width: 413px) and (min-width: 411px) {
+     .navlink{
+         width: 80px;
+         margin-left: 0px;
+     }
+     .navbar-nav{ 
+        width: 388px;
+     }
+     .cartbutton{
+         margin-left: 0px;
+     }
+         
+       .dropdownbtn{
+             position: relative;
+             margin-left: 335px;
+     }
+     .prfil{
+         margin-top: 10px;
+         margin-right: 30px;
+     }
+     .formwidth{
+         width: 388px;
+     }
+    }
+ 
+    @media screen and (max-width: 821px) and (min-width: 819px) {
+     .navlink{
+         width: 80px;
+         margin-left: 0%;
+     }
+     .navbar-nav{ 
+        width: 796px;
+     }
+     
+     .cartbutton{
+         margin-left: 0%;
+     }
+         
+       .dropdownbtn{
+             position: relative;
+             margin-left: 96%;
+     }
+     .prfil{
+         margin-top: 10px;
+         margin-right: 30px;
+     }
+     .formwidth{
+         width: 796px;
+     }
+    }
+    @media screen and (max-width: 769px) and (min-width: 767px) {
+     .navlink{
+         width: 80px;
+         margin-left: 0%;
+     }
+     .navbar-nav{ 
+        width: 744px;
+     }
+     
+     .cartbutton{
+         margin-left: 0%;
+     }
+         
+       .dropdownbtn{
+             position: relative;
+             margin-left: 96%;
+     }
+     .prfil{
+         margin-top: 10px;
+         margin-right: 30px;
+     }
+     .formwidth{
+         width: 744px;
+     }
+    }
+    @media screen and (max-width: 913px) and (min-width: 911px) {
+     .navlink{
+         width: 80px;
+         margin-left: 0%;
+     }
+     .navbar-nav{ 
+        width: 888px;
+     }
+     
+     .cartbutton{
+         margin-left: 0%;
+     }
+         
+       .dropdownbtn{
+             position: relative;
+             margin-left: 96.5%;
+     }
+     .prfil{
+         margin-top: 10px;
+         margin-right: 30px;
+     }
+     .formwidth{
+         width: 888px;
+     }
+    }
+    @media screen and (max-width: 541px) and (min-width: 539px) {
+     .navlink{
+         width: 80px;
+         margin-left: 0%;
+     }
+     .navbar-nav{ 
+        width: 516px;
+     }
+     
+     .cartbutton{
+         margin-left: 0%;
+     }
+         
+       .dropdownbtn{
+             position: relative;
+             margin-left: 94%;
+     }
+     .prfil{
+         margin-top: 10px;
+         margin-right: 30px;
+     }
+     .formwidth{
+         width: 516px;
+     }
+    }
+    @media screen and (max-width: 281px) and (min-width: 279px) {
+     .navlink{
+         width: 80px;
+         margin-left: 0px;
+     }
+     .navbar-nav{ 
+        width: 256px;
+     }
+     
+     .cartbutton{
+         margin-left: 0%;
+     }
+         
+       .dropdownbtn{
+             position: relative;
+             margin-left: 88%;
+     }
+     .prfil{
+         margin-top: 10px;
+         margin-right: 30px;
+     }
+     .formwidth{
+         width: 256px;
+         margin-right: 0px;
+     }
+    }

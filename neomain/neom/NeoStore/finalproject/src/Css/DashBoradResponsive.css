@@ -1,0 +1,205 @@
+
+  @media screen and (max-width: 391px) and (min-width: 389px) {
+    .BannerImage{
+      height: 200px;
+    }
+    .CardImage{
+      width: 365px;
+    }
+    .Cardsize{
+      width: 365px;
+    }
+    .cardSIze{
+      width: 365px
+   }
+  }
+  @media screen and (max-width: 376px) and (min-width: 374px) {
+    .BannerImage{
+      height: 200px;
+    }
+    .CardImage{
+      width: 350px;
+    }
+    .Cardsize{
+      width: 350px;
+    }
+    .cardSIze{
+      width: 350px
+   }
+   .cardtext{
+     width: 318px ;
+   }
+  }
+  @media screen and (max-width: 415px) and (min-width: 413px) {
+    .BannerImage{
+      height: 200px;
+    }
+    .CardImage{
+      width: 390px;
+    }
+    .Cardsize{
+      width: 390px;
+    }
+    .cardSIze{
+      width: 390px
+   }
+  }
+  @media screen and (max-width: 394px) and (min-width: 392px) {
+    .BannerImage{
+      height: 300px;
+    }
+    .CardImage{
+      width: 370px;
+    }
+    .Cardsize{
+      width: 370px;
+    }
+    .cardSIze{
+      width: 370px
+   }
+  }
+  @media screen and (max-width: 361px) and (min-width: 359px) {
+    .BannerImage{
+      height: 200px;
+    }
+    .CardImage{
+      width: 335px;
+    }
+    .Cardsize{
+      width: 335px;
+    }
+    .cardSIze{
+      width: 335px
+   }
+  }
+  
+  @media screen and (max-width: 412px) and (min-width: 411px) {
+    .BannerImage{
+      height: 200px;
+    }
+    .CardImage{
+      width: 390px;
+    }
+    .Cardsize{
+      width: 390px;
+    }
+    .cardSIze{
+      width: 390px
+   }
+  }
+  @media screen and (max-width: 820px) and (min-width: 820px) {
+   
+    .CardImage{
+      width: 380px;
+    }
+    .Cardsize{
+      width: 380px;
+    }
+    .cardtext{
+      width: 350px;
+    }
+    .cardSIze{
+      width: 380px
+   }
+  }
+  @media screen and (max-width: 769px)  and (min-width: 767px){
+    .BannerImage{
+      height: 300px;
+      width: 100%;
+    }
+    .CardImage{
+      height: 300px;
+      width: 360px;
+    }
+    .Cardsize{
+      width: 360px;
+    }
+    .cardSIze{
+      width: 300px
+   }
+  }
+  @media screen and (max-width: 913px)  and (min-width: 911px){
+    .BannerImage{
+      height: 300px;
+      width: 100%;
+    }
+    .CardImage{
+      height: 400px;
+      width: 430px;
+    }
+    .Cardsize{
+      width: 430px;
+    }
+    .cardSIze{
+      width: 430px;
+   }
+   .cardtext {
+    width: 400px;
+}
+  }
+  @media screen and (min-width: 539px ) and (max-width: 541px)  {
+    .BannerImage{
+      height: 300px;
+    }
+    .CardImage{
+      height: 350px;
+      width: 515px;
+    }
+    .Cardsize{
+      width: 515px;
+    }
+    .cardSIze{
+      width: 515px;
+   }
+   .cardtext {
+    width: 400px;
+}
+  }
+  @media screen and (min-width: 279px ) and (max-width: 280px)  {
+    .BannerImage{
+      height: 200px;
+    }
+    .CardImage{
+      height: 250px;
+      width: 255px;
+    }
+    .Cardsize{
+      width: 255px;
+    }
+    .cardSIze{
+      width: 250px;
+   }
+   .cardtext {
+    width: 225px;
+}
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
+    .BannerImage{
+      height: 300px;
+    }
+    .CardImage{
+      height: 300px;
+      width: 230px;
+    }
+    .cardSIze{ 
+      width: 230px
+   }
+   .cardtext {
+    width: 180px;
+}
+  }
+  @media screen and (min-width: 1280px) and (max-width: 1280px) {
+    .BannerImage{
+      height: 400px;
+    }
+    .CardImage{
+      width: 295px;
+    }
+    .Cardsize{
+      width: 295px;
+    }
+    .cardSIze{
+      width: 295px;
+    }
+  }
+ 

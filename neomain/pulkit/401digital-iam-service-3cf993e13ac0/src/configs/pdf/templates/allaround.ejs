@@ -1,0 +1,397 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no">
+		<title>CRM :: Organization</title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700&display=swap" rel="stylesheet"/>
+        <style>
+         .outer-section-one
+         {
+             /* max-width:8.3in;
+             min-height:11.6in; */
+             width:90%;
+             margin:0 auto;
+         }
+        </style>
+    </head>
+    <body>
+        <div class="outer-section-one" style="font-family: 'Poppins', sans-serif;">
+            <!-- top-header -->
+            <div class="top-header" style="float: left;width: 100%;">
+                <div class="left-content" style="float: left;">
+                    <h3 style="font-size:12px;font-family: 'Poppins', sans-serif;font-weight:500">Certificate of Product Registration</h3>
+                </div>
+                <div class="right-content" style="float: right; border: 1px solid #e8e7e7;padding: 0px 15px;
+                min-height:27px;line-height: 23px;margin-top: 8px">
+                    <h4 style="float:left;font-family: 'Poppins', sans-serif;font-weight:500;font-size:10px;margin:0">Contract Number:</h4>
+                    <p style="font-weight: 600;margin-left: 10px;float: left;line-height:23px;font-size: 10px;margin:0"><%= contractNumber %></p>
+                  
+                </div>
+                <div class="img">
+                   
+                    <img src="http://localhost:3010/images/img2.jpg" style="    height: 35px;
+                    float: right;
+                    right: 45px;
+                    top: 51px;margin-right:4px;">
+                     <img src="http://localhost:3010/images/img1.png" style="height:35px;
+                     float: right;
+                     margin-right:5px;">
+                </div>
+            </div>
+             <!-- top-header -->
+            <!-- content-secttion -->
+            <div class="content-section"  style="float: left;width: 100%;">
+                <!-- a-block -->
+                <div class="a-block"  style="float: left;width: 100%;">
+                    <h3 style="    background-color: #1760a5;color: #fff;font-weight: 300;padding: 0px 15px;
+                    font-size: 10px;margin-bottom: 0px;    margin-top: 0px;"> A.Contract Holder -Registered Owner(s)</h3>
+                  <table style="width:100%;    border: 1px solid #6984b1;margin: 0px;padding: 0;border-collapse: collapse;">
+                    <tr>  
+                        <th style="text-align: left; background:#dde3ef;font-weight: 500;padding: 0px 15px;font-size: 8px;border-right: 1px solid #6984b1;">Contract Holder's Name</th>
+                        <th style="text-align: left; background:#dde3ef;font-weight: 500;padding: 0px 15px;font-size: 8px;border-right: 1px solid #6984b1;">Contract Holder's Given/FirstName</th>
+                        <th style="text-align: left; background: #dde3ef;font-weight: 500;padding: 0px 15px;font-size: 8px;">Telephone</th>
+                    </tr>
+                    <tr>
+                          <td style=" padding: 0px 15px;font-size: 7px;border-right: 1px solid #6984b1;"><%=lastName%></td>
+                          <td style=" padding: 0px 15px;font-size: 7px;border-right: 1px solid #6984b1"><%=firstName%></td>
+                          <td style=" padding: 0px 15px;font-size: 7px;"><%=telephone%></td>
+                    </tr>
+                   
+                  </table>
+                  <table style="width:100%;border-left: 1px solid #6984b1;border-right: 1px solid #6984b1;margin: 0px;padding: 0;border-collapse: collapse;">
+                    <tr>
+                        <th style="text-align: left; background:#dde3ef;font-weight: 500;padding: 0px 15px;font-size:8px;border-right: 1px solid #6984b1;">Apt/TownHouse No/Address</th>
+                        <th style="text-align: left; background:#dde3ef;font-weight: 500;padding: 0px 15px;font-size: 8px;border-right: 1px solid #6984b1;">City</th>
+                        <th style="text-align: left; background: #dde3ef;font-weight: 500;padding: 0px 15px;font-size: 8px;border-right: 1px solid #6984b1;">Province</th>
+                        <th style="text-align: left; background: #dde3ef;font-weight: 500;padding: 0px 15px;font-size: 8px;border-right: 1px solid #6984b1;">Postal Code</th>
+                        <th style="text-align: left; background: #dde3ef;font-weight: 500;padding: 0px 15px;font-size: 8px;">Tax Exempt-Attach Proof of status & Deivery to reserve</th>
+                      </tr>
+                      <tr>
+                          <td style=" padding: 0px 15px;font-size:7px;border-right: 1px solid #6984b1;"><%=streetAddress%></td>
+                          <td style=" padding: 0px 15px;font-size: 7px;border-right: 1px solid #6984b1;"><%=city%></td>
+                          <td style=" padding: 0px 15px;font-size: 7px;border-right: 1px solid #6984b1;"><%=province%></td>
+                          <td style=" padding: 0px 15px;font-size:7px;border-right: 1px solid #6984b1;"><%=postalCode%></td>
+                          <td style=" padding: 0px 15px;font-size: 7px;">
+                            <%= taxExemptStatusCardNum %>
+                            <% if (taxExemptStatusCardNum) { %>
+                              <input type="checkbox" checked="checked">STATUS CARD #
+                            <% } else { %>
+                                <input type="checkbox">STATUS CARD #
+                            <% } %>
+   
+
+                          </td>
+                    </tr>
+                  </table>
+                  <table style="width:100%;border: 1px solid #6984b1;margin: 0px;padding: 0;border-collapse: collapse;">
+                    <tr>  
+                        <th style="text-align: left; background:#dde3ef;font-weight: 500;padding: 0px 15px;font-size: 8px;border-right: 1px solid #6984b1;">Co-Contract Holder's  SurName</th>
+                        <th style="text-align: left; background:#dde3ef;font-weight: 500;padding: 0px 15px;font-size:8px;border-right: 1px solid #6984b1;">Co- Contract Holder's Given/FirstName</th>
+                        <th style="text-align: left; background: #dde3ef;font-weight: 500;padding: 0px 15px;font-size:8px;">Telephone</th>
+                    </tr>
+                    <tr>
+                          <td style=" padding: 0px 15px;font-size:7px;border-right: 1px solid #6984b1;"><%= coContractHolderLastName %></td>
+                          <td style=" padding: 0px 15px;font-size:7px;border-right: 1px solid #6984b1;"><%= coContractHolderFirstName %></td>
+                          <td style=" padding: 0px 15px;font-size: 7px;"><%= coContractHolderTelephone %></td>
+                    </tr>
+                   
+                  </table>
+                </div>
+                  <!-- a-block -->
+                   <!-- b-block -->
+                <div class="b-block"  style="float: left;width: 100%;">
+                    <h3 style="background-color:#1760a5;color: #fff;font-weight: 300;padding: 0px 15px;
+                    font-size: 8px;margin-bottom: 0px;    margin-top: 0px;"> B.Unit Information</h3>
+                  <table style=" width:100%;border: 1px solid #6984b1;margin: 0px;padding: 0;border-collapse: collapse;">
+                    <tr>  
+                        <th style="text-align: left; background: #dde3ef;font-weight: 500;padding: 0px 15px;font-size: 8px;border-right: 1px solid #6984b1;">Year</th>
+                        <th style="text-align: left; background: #dde3ef;font-weight: 500;padding: 0px 15px;font-size: 8px;border-right: 1px solid #6984b1;">Make</th>
+                        <th style="text-align: left; background:#dde3ef;font-weight: 500;padding: 0px 15px;font-size: 8px;border-right: 1px solid #6984b1;">Model</th>
+                        <th style="text-align: left; background: #dde3ef;font-weight: 500;padding: 0px 15px;font-size: 8px;">VIN Number</th>
+                    </tr>
+                    <tr>
+                          <td style=" padding: 0px 15px;font-size: 7px;border-right: 1px solid #6984b1;"><%= unitYear %></td>
+                          <td style=" padding: 0px 15px;font-size: 7px;border-right: 1px solid #6984b1;"><%= unitMake %></td>
+                          <td style=" padding: 0px 15px;font-size: 7px;border-right: 1px solid #6984b1;"><%= unitModel %></td>
+                          <td style=" padding: 0px 15px;font-size: 7px;"><%= unitVinNumber %></td>
+                    </tr>
+                   
+                  </table>
+                  <table style="width:100%;border:1px solid #6984b1;margin: 0px;padding: 0;border-collapse: collapse;">
+                    <tr>
+                        <th style="text-align: left; background: #dde3ef;font-weight: 500;padding: 0px 15px;font-size: 8px;border-right: 1px solid #6984b1;">Stock No</th>
+                        <th style="text-align: left; background: #dde3ef;font-weight: 500;padding: 0px 15px;font-size:8px;border-right: 1px solid #6984b1;">Unit Purchase Date</th>
+                        <th style="text-align: left; background:#dde3ef;font-weight: 500;padding: 0px 15px;font-size: 8px;border-right: 1px solid #6984b1;">Purchase Price Of Unit(Before Tax)</th>
+                        <th style="text-align: left; background: #dde3ef;font-weight: 500;padding: 0px 15px;font-size:8px;">Your Contract Expiry Date(MM/DD/YY)</th>
+                      </tr>
+                      
+                          <td style=" padding: 0px 15px;font-size:7px;border-right: 1px solid #6984b1;"><%= unitStockNumber %></td>
+                          <td style=" padding: 0px 15px;font-size: 7px;border-right: 1px solid #6984b1;"><%= UPurchaseDate %></td>
+                          <td style=" padding: 0px 15px;font-size: 7px;border-right: 1px solid #6984b1;"><%= unitPurchasePrice %></td>
+                          <td style=" padding: 0px 15px;font-size: 7px;"> 
+                            <%= UContractExpiryDate %>
+                            <i>(Expires automatically 36 Months after the Unit Purchase Date)</i>
+                          </td>
+                    </tr>
+                  </table>
+                </div>
+                  <!-- b-block -->
+                  <!-- c-block -->
+                <div class="c-block" style="float: left;width: 100%;" >
+                    <h3 style="background-color:#1760a5;color: #fff;font-weight: 300;padding: 0px 15px;
+                    font-size: 8px;margin-bottom: 0px;    margin-top: 0px;">C.Services By Checking the box below,dealer certificates that the protection has been applied</h3>
+                  <table style="width:100%;border: 1px solid #6984b1;margin: 0px;padding: 0;border-collapse: collapse;">
+                    <tr>
+                        <td style=" padding: 0px 15px;font-size: 7px;border-right: 1px solid #6984b1;"> 
+                            <% if(vehicleAge == 'New'){ %>
+                                <input type="checkbox" checked="checked">New
+                            <% } else { %> 
+                                <input type="checkbox">New
+                            <% } %>
+                            <% if(vehicleAge == 'Pre-Owned'){ %>
+                                <input type="checkbox" checked="checked">Pre-Owned
+                            <% } else { %> 
+                                <input type="checkbox">Pre-Owned
+                            <% } %>
+                          </td>
+                          <td style=" padding: 0px 15px;font-size:7px;"> 
+
+                            <% if(serviceDetailsArr.includes('Electronic Rust Module')) { %>
+                                <input type="checkbox" checked="checked">Electronic Rust Module
+                            <% } else { %> 
+                                <input type="checkbox">Electronic Rust Module
+                            <% } %>
+                             
+                            <% if(serviceDetailsArr.includes('Rust Inhibitor Applied')) { %>
+                                <input type="checkbox" checked="checked">Rust Inhibitor Applied
+                            <% } else { %> 
+                                <input type="checkbox">Rust Inhibitor Applied
+                            <% } %>
+
+                            <% if(serviceDetailsArr.includes('Undercoating Applied')) { %>
+                              <input type="checkbox" checked="checked">Undecorating Applied
+                            <% } else { %> 
+                              <input type="checkbox">Undecorating Applied
+                            <% } %>
+                            
+                            <% if(serviceDetailsArr.includes('Paint Protector Applied')) { %>
+                                 <input type="checkbox" checked="checked">Paint Protector Applied
+                            <% } else { %> 
+                                <input type="checkbox">Paint Protector Applied
+                            <% } %>
+
+                            <% if(serviceDetailsArr.includes('Fabric Protector Applied')) { %>
+                                 <input type="checkbox" checked="checked">Fabric Protector Applied
+                            <% } else { %> 
+                                <input type="checkbox">Fabric Protector Applied
+                            <% } %>
+                            
+                          </td>
+                    </tr>
+                  </table>
+                </div>
+            </div>
+               <!-- c-block -->
+                <!-- d-block -->
+                <div class="d-block" style="float:left;width:100%;">
+                    <h3 style="background-color:#1760a5;color: #fff;font-weight: 300;padding:0px 15px;
+                    font-size: 8px;margin-bottom: 0px;    margin-top: 0px;"> D.Contract Cost</h3>
+                  <table style="width:100%;border: 1px solid #6984b1;margin: 0px;padding: 0;border-collapse: collapse;">
+                    <tr>  
+                        <th style="text-align: left; background: #dde3ef;font-weight: 500;padding: 0px 15px;font-size: 7px;border-right: 1px solid #6984b1;">Base Fee</th>
+                        <th style="text-align: left; background: #dde3ef;font-weight: 500;padding: 0px 15px;font-size: 7px;border-right: 1px solid #6984b1;">Options</th>
+                        <th style="text-align: left; background: #dde3ef;font-weight: 500;padding: 0px 15px;font-size: 7px;border-right: 1px solid #6984b1;">Sub Total</th>
+                        <th style="text-align: left; background: #dde3ef;font-weight: 500;padding: 0px 15px;font-size: 7px;border-right: 1px solid #6984b1;">GST/HST</th>
+                        <th style="text-align: left; background: #dde3ef;font-weight: 500;padding: 0px 15px;font-size: 7px;">Total Cost</th>
+                    </tr>
+                    <tr>
+                          <td style=" padding: 0px 15px;font-size: 7px;border-right: 1px solid #6984b1;">$<%=baseFee%></td>
+                          <td style=" padding: 0px 15px;font-size: 7px;border-right: 1px solid #6984b1;">$<%=optionPrice%></td>
+                          <td style=" padding: 0px 15px;font-size: 7px;border-right: 1px solid #6984b1;">$<%=subTotal%></td>
+                          <td style=" padding: 0px 15px;font-size: 7px;border-right: 1px solid #6984b1;">$<%=hstPrice%></td>
+                          <td style=" padding: 0px 15px;font-size: 7px;">$<%=totalPrice%></td>
+                    </tr>
+                  </table>
+                  </div>
+                <!-- d-block -->
+                 <!--e-block -->
+                 <div class="e-block" style="float:left;width:100%;">
+                    <h3 style="background-color:#1760a5;color: #fff;font-weight: 300;padding:0px 15px;
+                    font-size:8px;margin-bottom: 0px;    margin-top: 0px;"> E.Dealership Representative</h3>
+                    <table style="width:100%;border: 1px solid #6984b1;margin: 0px;padding: 0;border-collapse: collapse;">
+                        <tr> 
+                            <td style=" padding: 0px 15px;font-size: 7px;"><%=dealerFirstName%> <%=dealerLastName%> </td> 
+                        </tr>
+                    </table>
+                </div>
+                <!--e-block -->
+                <!--f-block -->
+                <div class="f-block" style="float:left;width:100%;">
+                    <h3 style="background-color:#1760a5;color: #fff;font-weight: 300;padding:0px 15px;
+                    font-size: 8px;margin-bottom: 0px;    margin-top: 0px;"> F.Signatures</h3>
+                    <table style="width:100%;border: 1px solid #6984b1;margin: 0px;padding: 0;border-collapse: collapse;">
+                        <tr>  
+                            <th style="text-align: left; background: #dde3ef;font-weight: 500;padding: 0px 15px;font-size:7px;border-right: 1px solid #6984b1;">Dealer Number</th>
+                            <th style="text-align: left; background: #dde3ef;font-weight: 500;padding: 0px 15px;font-size: 7px;border-right: 1px solid #6984b1;">Selling Dealership Name</th>
+                            <th style="text-align: left; background: #dde3ef;font-weight: 500;padding: 0px 15px;font-size: 7px;">Telephone</th>
+                        </tr>
+                        <tr>
+                              <td style=" padding: 0px 15px;font-size: 7px;border-right: 1px solid #6984b1;"><%=dealerNumber%></td>
+                              <td style=" padding: 0px 15px;font-size: 7px;border-right: 1px solid #6984b1;"><%=dealerName%></td>
+                              <td style=" padding: 0px 15px;font-size: 7px;"><%=dealerTelephone%></td>
+                        </tr>
+                       
+                      </table>
+                </div>
+                <!--f-block -->
+                <!-- All around section -->
+                <div class="all-around-outer" style="float:left;width:100%;border: 2px solid #daf3fe;margin-top:5px;">
+                    <h3 style=" font-size:8px;font-weight:600;text-align:center;margin: 0px;">All Around Protection</h3>
+                    <div class="outer-section" style="float:left;width:100%">
+                        <table>
+                            <tr>
+                                <td style=" padding: 0px 20px;">
+                                    <div class="box-outer">
+                                        <h4 style="margin-bottom:0px;font-size:7px;margin-top:0px;font-weight:600;">Electronic Rust Module</h4>
+                                        <p style="word-break: break-all;font-size:6px;margin:0px;line-height:8px;">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a
+                                             n unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                                             but also the leap into electronic typesetting, remaining essentially unchanged.
+                                        </p>
+                                    </div>
+                                </td>
+                                <td style=" padding: 0px 20px;">
+                                    <div class="box-outer">
+                                        <h4 style="margin-bottom:0px;font-size:7px;margin-top: 0px;font-weight:600">Underbody Protective Coating & Sound Suppression</h4>
+                                        <p style="word-break: break-all;font-size:6px;margin:0px;line-height:8px;">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a
+                                             n unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                                             but also the leap into electronic typesetting, remaining essentially unchanged.
+                                        </p>
+                                    </div>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td style=" padding: 0px 20px;">
+                                    <div class="box-outer">
+                                        <h4 style="margin-bottom:0px;font-size:7px;margin-top: 0px;font-weight:600">Spray on Rust Inhibitor</h4>
+                                        <p style="word-break: break-all;font-size:6px;margin:0px;line-height:8px;">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a
+                                             n unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                                             but also the leap into electronic typesetting, remaining essentially unchanged.
+                                        </p>
+                                    </div>
+                                </td>
+                                <td style=" padding: 0px 20px;">
+                                    <div class="box-outer">
+                                        <h4 style="margin-bottom:0px;font-size:7px;margin-top: 0px;font-weight:600">Paint Protection System</h4>
+                                        <p style="word-break: break-all;font-size:6px;margin:0px;line-height:8px;">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a
+                                             n unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                                             but also the leap into electronic typesetting, remaining essentially unchanged.
+                                        </p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style=" padding: 0px 20px;">
+                                    <div class="box-outer">
+                                        <h4 style="margin-bottom:0px;font-size:7px;margin-top:0px;font-weight:600">Fabric Protection System</h4>
+                                        <p style="word-break: break-all;font-size:6px;margin:0px;line-height:8px;">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a
+                                            n unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                                            but also the leap into electronic typesetting, remaining essentially unchanged.
+                                        </p>
+                                    </div>
+                                
+                                </td>
+                            </tr>
+                        </table>
+                </div>
+                </div>
+                <div class="delr-outer" style="float:left;width:100%;margin-top:0px">
+                    <p style="border-bottom: 2px solid #ccc;padding-bottom:2px;font-size:6px;">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a
+                             n unknown printer took a galley of type and scrambled it to make a type specimen
+                    </p>
+                    <div class="btm1" style="float: left;margin-top: 5px;font-size:6px;">
+                        Selling Dealership Signature
+                    </div>
+                    <div class="btm2" style="float: right;margin-top: 5px;font-size:6px;">
+                        Date Signed(Contract Purchase Date)
+                    </div>
+                </div>
+                <div class="privacy"  style="font-size:6px;float:left;width:100%;border-top: 2px solid #ccc;margin-top:0px;padding-top:3px;">
+                    Privacy Notice : Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a
+                    n unknown printer took a galley of type and scrambled it to make a type specimen
+                </div>
+                <div class="contract"  style="float:left;width:100%;">
+                   <p style="text-transform:uppercase;margin-top:4px;margin-bottom:0px;font-size:6px;">
+                   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a
+                    n unknown printer took a galley of type and scrambled it to make a type specimen
+                   </p>
+                   <p style="margin-top:0px;font-size:6px;">
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a n unknown printer took
+                     a galley of type and scrambled it to make a type specimen 
+                   </p>
+                </div>
+                <div class="signature-part" style="float:left;width:100%;padding: 0px 15px;">
+                    <div class="sig1" style="float:left;    width: 25%;
+                    padding: 0px 12px;">
+                        <input type="textbox" style="width: 80%;border-bottom: 1px solid #ccc !important;border: none;    height: 8px;">
+                        <p style="margin-top:0px;font-size:6px;margin-bottom:0px;line-height:4px;">Contract Holder's Signature</p>
+                    </div>
+                    <div class="sig1" style="float:left;    width: 25%;
+                    padding: 0px 12px;">
+                        <input type="textbox" style="width: 80%;border-bottom: 1px solid #ccc !important;border: none;    height: 8px;">
+                        <p style="margin-top:0px;font-size:6px;margin-bottom:0px;line-height:4px;">Date Signed(Contract Purchase Date)</p>
+                    </div>
+                    <div class="sig1" style="float:left;    width: 25%;
+                    padding: 0px 12px;">
+                        <input type="textbox" style="width: 80%;border-bottom: 1px solid #ccc !important;border: none;    height: 8px;">
+                       <p style="margin-top:0px;font-size:6px;margin-bottom:0px;line-height:4px;">Co-Contract Holder's Signature</p>
+                    </div>
+                </div>
+                <div class="detail-part">
+                    <table style="float:none; width:90%;margin:0 auto;    color: #f00;clear: both">
+                        <tr>
+                            <td>
+                                <p style="float:left;width:100%;padding:0px 10px;font-size:5px;">
+                                    Ist Copy:Administrator
+                                </p>
+                            </td>
+                            <td>
+                                <p style="float:left;width:100%;padding:0px 10px;font-size:5px;">
+                                    2nd Copy:Dealership
+                                </p>
+                            </td>
+                            <td>
+                                <p style="float:left;width:100%;padding:0px 10px;font-size:5px;">
+                                    3rd Copy:Line Holder
+                                </p>
+                            </td>
+                            <td>
+                                <p style="float:left;width:100%;padding:0px 10px;font-size:5px;">
+                                    4th Copy:Contract Holder
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                 <!-- All around section -->
+            <!-- content-secttion -->
+        </div>
+    </body>
+</html>

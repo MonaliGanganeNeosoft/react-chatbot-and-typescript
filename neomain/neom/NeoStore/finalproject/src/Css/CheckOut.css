@@ -1,0 +1,227 @@
+.bottom-border{
+    box-shadow: 1px 1px 9px #343434;
+    width: 100%;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.addresssec{
+    margin-left: 20px;
+    width: 550px;
+}
+.red{
+  color: red;
+  margin-bottom: 10px;
+}
+.input-class{
+  margin-bottom: 10px !important;
+}
+.num{
+    background-color: #4169E1;
+    border-radius: 50%;
+    padding: 2px;
+    padding-left: 5px;
+  }
+  .num1{
+    background-color: gray;
+    border-radius: 50%;
+    padding: 2px;
+    padding-left: 5px;
+  }
+  .imagesize{
+      height: 80px;
+      width: 80px;
+  }
+  .Carts{
+      margin: 20px;
+    box-shadow: 1px 1px 9px #343434;
+  }
+  .productname{
+    margin-left: 10px;
+      display: inline-block;
+      width: 300px;
+      white-space: nowrap;
+      overflow: hidden !important;
+      text-overflow: ellipsis;
+  }
+  .stock{
+    color: green;
+  }
+  .margincheck{
+    margin-left: 10px;
+
+  }
+  .butn{
+    border-radius: 50%;
+    margin: 5px;
+  }
+  .review{
+    /* border: none; */
+    margin: 20px;
+    background-color: white;
+  }
+  .buttonmargin{
+      margin-left: 4%;
+  }
+  .addresstab{
+    box-shadow: 1px 1px 9px #343434;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /*card css */
+
+
+  
+
+  .form-class{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+   .input-class {
+    background: #e7e9ec;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    outline: none;
+    font-weight: 300;
+  }
+  
+  .rccs__card--unknown > div {
+    background:#1A1F71 !important;
+  }
+  .Center{
+    max-width:60%;
+      max-height:60%;
+      position:absolute;
+      top:0; left:0; right:0; bottom:0;
+      margin:auto;
+  }
+  
+  
+  .cardtext {
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+  }
+  /* cards cssc end*/
+  
+@media screen and  (min-width: 374px) and  (max-width: 376px) {
+  .bottom-border{
+    width: 350px;
+  }
+  .addresssec{
+    width: 300px;
+    margin: 0px;
+  }
+  .addresstab{
+    width: 351.2px;
+  }
+  .buton{
+    margin: 5px;
+    width: 70px;
+  }
+  }
+  @media screen and  (min-width: 413px) and  (max-width: 415px) {
+  
+    .addresssec{
+      width: 350px;
+      margin: 0px;
+    }
+    .addresstab{
+      width: 390.4px;
+    }
+    .buton{
+      margin: 5px;
+      width: 70px;
+    }
+    }
+
+    @media screen and  (min-width: 389px) and  (max-width: 391px) {
+  
+      .addresssec{
+        width: 320px;
+        margin: 0px;
+      }
+      .addresstab{
+        width: 366.4px;
+      }
+      .buton{
+        margin: 5px;
+        width: 70px;
+      }
+      }
+
+      @media screen and  (min-width: 392px) and  (max-width: 394px) {
+  
+        .addresssec{
+          width: 320px;
+          margin: 0px;
+        }
+        .addresstab{
+          width: 369.6px;
+        }
+        .buton{
+          margin: 5px;
+          width: 70px;
+        }
+        }
+
+        @media screen and  (min-width: 359px) and  (max-width: 361px) {
+  
+          .addresssec{
+            width: 290px;
+            margin: 0px;
+          }
+          .addresstab{
+            width: 336px;
+          }
+          .buton{
+            margin: 5px;
+            width: 70px;
+          }
+          }
+ @media screen and  (min-width: 412px) and  (max-width: 413px) {
+  
+.addresssec{
+        width: 340px;
+         margin: 0px;
+          }
+            .addresstab{
+              width: 388px;
+            }
+            .buton{
+              margin: 5px;
+              width: 70px;
+            }
+            }
+@media screen and  (max-width: 280px) {
+  
+.addresssec{
+  width: 210px;
+   margin: 0px;
+    }
+      .addresstab{
+        width: 256px;
+      }
+      .buton{
+        margin: 5px;
+        width: 70px;
+      }
+  }
+  @media screen  and (min-width:540px) {
+        .buton{
+          margin: 5px;
+          width: 70px;
+        }
+    }

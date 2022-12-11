@@ -1,0 +1,33 @@
+.bottom-border{
+    display: block;
+    box-shadow: 1px 1px 9px #343434;
+    width: 100%;
+    font-size: 20px ;
+    margin: 10px;
+    padding: 10px;
+}
+.card-effect{
+    border-bottom: solid 1px ;
+}
+.cardtext {
+    display: inline-block;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+/* .filter{
+    
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+} */

@@ -1,0 +1,390 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev> npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to C:\Users\Neosoft\Desktop\react-typescript\react-dev\package.json:
+
+{
+  "name": "react-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev>
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev>
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev>
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev>
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev>
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev>
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev>
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev>
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev>
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev>
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev>
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev>
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev>
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev>
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev> npm i -D typescript
+
+added 1 package, and audited 2 packages in 5s
+
+found 0 vulnerabilities
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev> npx tsc src/index.ts
+../../../node_modules/@types/react/index.d.ts:239:10 - error TS2456: Type alias 'ReactFragment' circularly references itself.
+
+239     type ReactFragment = {} | Iterable<ReactNode>;
+             ~~~~~~~~~~~~~
+
+../../../node_modules/@types/react/index.d.ts:239:31 - error TS2304: Cannot find name 'Iterable'.
+
+239     type ReactFragment = {} | Iterable<ReactNode>;
+                                  ~~~~~~~~
+
+../../../node_modules/@types/react/index.d.ts:240:10 - error TS2456: Type alias 'ReactNode' circularly references itself.       
+
+240     type ReactNode = ReactChild | ReactFragment | ReactPortal | boolean | null | undefined;
+             ~~~~~~~~~
+
+../../../node_modules/@types/react/index.d.ts:421:23 - error TS2583: Cannot find name 'Set'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2015' or later.
+
+421         interactions: Set<SchedulerInteraction>,
+                          ~~~
+
+../../../node_modules/@types/scheduler/tracing.d.ts:64:35 - error TS2583: Cannot find name 'Set'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2015' or later.
+
+64   onWorkScheduled: (interactions: Set<Interaction>, threadID: number) => void;
+                                     ~~~
+
+../../../node_modules/@types/scheduler/tracing.d.ts:70:34 - error TS2583: Cannot find name 'Set'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2015' or later.
+
+70   onWorkCanceled: (interactions: Set<Interaction>, threadID: number) => void;
+
+../../../node_modules/@types/scheduler/tracing.d.ts:80:33 - error TS2583: Cannot find name 'Set'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2015' or later.
+
+80   onWorkStarted: (interactions: Set<Interaction>, threadID: number) => void;
+                                   ~~~
+
+../../../node_modules/@types/scheduler/tracing.d.ts:86:33 - error TS2583: Cannot find name 'Set'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2015' or later.
+
+86   onWorkStopped: (interactions: Set<Interaction>, threadID: number) => void;
+                                   ~~~
+
+../../../node_modules/@types/scheduler/tracing.d.ts:90:12 - error TS2583: Cannot find name 'Set'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2015' or later.
+
+90   current: Set<Interaction>;
+              ~~~
+
+../../../node_modules/@types/scheduler/tracing.d.ts:102:40 - error TS2583: Cannot find name 'Set'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2015' or later.
+
+                                           ~~~
+
+Found 10 errors in 2 files.
+
+Errors  Files
+     4  ../../../node_modules/@types/react/index.d.ts:239
+     6  ../../../node_modules/@types/scheduler/tracing.d.ts:64
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev> ls
+
+
+    Directory: C:\Users\Neosoft\Desktop\react-typescript\react-dev
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        16-05-2022     10:15                node_modules
+d-----        16-05-2022     10:26                src
+-a----        16-05-2022     10:15            990 package-lock.json
+-a----        16-05-2022     10:15            260 package.json
+
+
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev> node src/index.js
+2 * 2 = 4
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev> npx tsc --init
+
+Created a new tsconfig.json with:
+                                                                                                                     TS
+  target: es2016
+  module: commonjs
+  strict: true
+  esModuleInterop: true
+  skipLibCheck: true
+  forceConsistentCasingInFileNames: true
+
+
+You can learn more at https://aka.ms/tsconfig.json
+[11:31:22 am] Starting compilation in watch mode...
+
+[11:31:24 am] Found 0 errors. Watching for file changes.
+
+Terminate batch job (Y/N)? y
+2 * 2 = 4
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev> node dist/index.js
+2 * 2 = 4
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev> node dist/index.js
+2 * 2 = 4
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev> node dist/index.js
+2 * 5 = 10
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev> npm i -D nodemon
+
+added 116 packages, and audited 118 packages in 9s
+
+16 packages are looking for funding
+
+found 0 vulnerabilities
+[nodemon] 2.0.16
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node dist/index.js`
+2 * 5 = 10
+[nodemon] clean exit - waiting for changes before restart
+[nodemon] restarting due to changes...
+11:42:30 am - Starting compilation in watch mode...
+[COMPILER]
+[COMPILER]
+[COMPILER] 11:42:32 am - Found 0 errors. Watching for file changes.
+[NODEMON] 2 * 2 = 4
+[NODEMON] ^CTerminate batch job (Y/N)? nodemon -w dist -q dist/index.js exited with code 3221225786
+[COMPILER] ^Ctsc -w exited with code 3221225786
+y
+PS C:\Users\Neosoft\Desktop\react-typescript\react-dev> npx concurrently -k -n COMPILER,NODEMON -c yellow,blue "tsc -w" "nodemon -w dist -q dist/index.js
+11:45:38 am - Starting compilation in watch mode...
+[COMPILER]
+[NODEMON] 2 * 2 = 4
+[COMPILER]
+[COMPILER] 11:45:40 am - Found 0 errors. Watching for file changes.
+[NODEMON] 2 * 2 = 4
+[NODEMON] 2 * 5 = 10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-->a]
+import { Col } from "react-bootstrap";
+import multi, { HelloWorld } from "./multi";
+const a = 2;
+const b = 2;
+console.log(`${a} * ${b} = ${multi(a, b)}`);
+//->data-types
+
+let c: boolean = false;
+console.log(c);
+
+let num: number = 1 + 0b1 + 0o1 + 0x1;
+console.log(num);
+
+const hello: string = "Hello";
+console.log(hello);
+const world: string = "World";
+const helloWorld = `${hello} and ${world}`;
+console.log(helloWorld);
+
+//null and undefined
+let n: null = null;
+let u: undefined = undefined;
+
+//let someNumber: number = null;
+
+function uppercaseFirstLetter(str: string | null) {
+  if (str) {
+    return str[0].toUpperCase() + str.substr(1);
+  }
+}
+console.log(uppercaseFirstLetter("hello"));
+//Object
+type primitiveTypes = boolean | number | string | symbol | null | undefined;
+const myObj: object = new Map();
+
+//void
+function log(message: string): void {
+  console.log(message);
+  //   return "a string";
+}
+
+//Array
+let array1: string[] = ["x", "y"];
+let array2: Array<string> = array1;
+console.log(array2);
+
+//tuple
+let tuple: [string, number] = ["str", 1];
+console.log(tuple);
+
+//Enum
+enum Color {
+  Red = 3,
+  Grren,
+  Blue = 99,
+}
+console.log(Color);
+let myFavoriteColor: Color = Color.Blue;
+console.log(Color.Red, Color.Grren, Color.Blue);
+console.log(Color[99]);
+
+//type any
+let ANY: any;
+ANY = "a string";
+ANY = 1;
+ANY = true;
+console.log(ANY);
+
+//Type Assertions
+
+// const email = document.getElementById("email");
+// if (email) {
+//   email.addEventListener("change", (e) => {
+//     const input = e.currentTarget as HTMLInputElement;
+//     console.log(input.value);
+//   });
+// }
+
+//-->b]
+//Interfaces
+interface Profile {
+  readonly name: string;
+  age?: number;
+}
+let profile: Profile = {
+  name: "Moni",
+};
+//index Signature
+interface A {
+  someProp: string;
+  [key: string]: number | string;
+}
+const a: A = { someProp: "Some Prop" };
+a.x = 1;
+a.y = 2;
+
+//Call Signature
+interface Sum {
+  (a: number, b: number): number;
+  prop1: string;
+}
+const sum: Sum = (a, b) => a + b;
+sum.prop1 = "Some Prop";
+console.log(sum.prop1);
+console.log(sum(2, 8));
+
+//Extending interfaces
+interface Parent {
+  x: string;
+}
+interface Parent2 {
+  y: string;
+}
+interface Parent3 {
+  z: string;
+}
+interface Child extends Parent, Parent2, Parent3 {}
+let Child: Child = { x: "Some prop", y: "y prop", z: "z prop" };
+console.log(Child);
+
+//-->c]
+//Functions (optional and default parameters)
+function sum(a: number, b: number = 0): number {
+  return a + b;
+}
+console.log(sum(2, 3));
+
+type myFunc = (a: number, b: number) => number;
+const num2: myFunc = (a, b) => a + b;
+console.log(num2(2, 5));
+
+//Unknown number of arguments
+function sumEveryThing(
+  arg1: string,
+  arg2: boolean,
+  ...numbers: number[]
+): number {
+  return numbers.reduce((result: any, num: any) => result + num, 0);
+}
+console.log(sumEveryThing("check:", true, 2, 3, 4, 5));
+
+// function calcArea(width: number, height: number): number;
+// function calcArea(length: number): number;
+
+function calcArea(...args: number[]): number {
+  if (args.length === 2) {
+    return args[0] * args[1];
+  }
+  return Math.pow(args[0], 2);
+}
+console.log(calcArea(3));
+
+//-->
+class Robot {
+  _color?: string;
+  static availableColors = ["green", "yellow"];
+  static isColorAvailable(color: string) {
+    return Robot.availableColors.includes(color);
+  }
+  constructor(protected _name: string) {}
+  askName() {
+    console.log(`My Name is ${this.name}`);
+  }
+  move(distance: number) {
+    console.log(`${this.name} moved ${distance} meters`);
+  }
+  set color(color: string) {
+    if (!Robot.isColorAvailable(color)) {
+      throw new Error(`Color ${color} is not available`);
+    }
+    this._color = color;
+  }
+  set name(value: string) {
+    this._name = "PREFIX_" + value;
+  }
+  get name() {
+    return this._name + "_SUFFIX";
+  }
+}
+
+class FlyingRobot extends Robot {
+  private readonly jetpackSize: number;
+  constructor(name: string, jetpackSize: number) {
+    super(name);
+    this.jetpackSize = jetpackSize;
+    this.name;
+  }
+  move(distance: number) {
+    console.log(`${this.name} is flying`);
+    super.move(distance);
+  }
+}
+const robot = new Robot("John");
+robot.askName();
+
+const flyingRobot = new FlyingRobot("Jim", 2);
+flyingRobot.move(10);
+flyingRobot.name = "Moni";
+console.log(`Flying robots jetpack size is `, flyingRobot.name);
+
+
+

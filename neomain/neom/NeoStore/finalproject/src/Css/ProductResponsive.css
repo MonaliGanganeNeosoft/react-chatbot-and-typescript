@@ -1,0 +1,443 @@
+
+@media screen and (max-width: 360px) and (min-width: 360px) {
+    
+    .cardtext {
+        width: 270px;
+    }
+    .bottom-border{
+        display: inline-block;
+        border:  1px solid black;
+        border-radius: 20px;
+        box-shadow: none;
+        width: 20%;
+        font-size: 10px;
+        margin: 20px;
+    }
+    .filter{
+        font-size: 10px ;
+        position: relative;
+
+    }
+    .dropdown{
+        display: inline;
+    }
+    .dropdown-item{
+        width: 80px;
+    }
+    .colormenu{
+        min-width: 0px !important; 
+        width: 80px;
+    }
+   }
+   
+   @media screen and (max-width: 376px) and (min-width: 374px) {
+    .cardtext {
+        width: 280px;
+    }
+    .bottom-border{
+        display: inline-block ;
+        border:  1px solid black ;
+        border-radius: 20px ;
+        box-shadow: none ;
+        width: 21% ;
+        font-size: 10px ;
+        margin: 20px ;
+    }
+    .filter{
+        font-size: 10px ;
+        position: relative;
+
+    }
+    .dropdown{
+        display: inline;
+    }
+    .dropdown-item{
+        width: 80px;
+    }
+    .colormenu{
+        min-width: 0px !important; 
+        width: 80px;
+    }
+    }
+    
+   @media screen and (max-width: 415px) and (min-width: 413px) {
+    .cardImage{
+        width: 350px;
+       }
+    .cardbody{
+        width: 350px;
+    }
+    .cardtext {
+        width: 270px;
+    }
+    .bottom-border{
+        display: inline-block;
+        border:  1px solid black;
+        border-radius: 20px;
+        box-shadow: none;
+        width: 20%;
+        font-size: 10px;
+        margin: 20px;
+    }
+    .filter{
+        font-size: 10px ;
+        position: relative;
+
+    }
+    .dropdown{
+        display: inline;
+    }
+    .dropdown-item{
+        width: 80px;
+    }
+    .colormenu{
+        min-width: 0px !important; 
+        width: 80px;
+    }
+    }
+    
+   @media screen and (max-width: 391px) and (min-width: 389px) {
+    .cardImage{
+        width: 320px;
+       }
+    .cardbody{
+        width: 330px;
+    }
+    .cardtext {
+        width: 270px;
+    }
+    .bottom-border{
+        display: inline-block;
+        border:  1px solid black;
+        border-radius: 20px;
+        box-shadow: none;
+        width: 20%;
+        font-size: 10px;
+        margin: 20px;
+    }
+    .filter{
+        font-size: 10px ;
+        position: relative;
+
+    }
+    .dropdown{
+        display: inline;
+    }
+    .dropdown-item{
+        width: 80px;
+    }
+    .colormenu{
+        min-width: 0px !important; 
+        width: 80px;
+    }
+    }
+ 
+    @media screen and (max-width: 394px) and (min-width: 392px) {
+        .cardImage{
+            width: 320px;
+           }
+        .cardbody{
+            width: 320px;
+        }
+        .cardtext {
+            width: 270px;
+        }
+        .bottom-border{
+            display: inline-block;
+            border:  1px solid black;
+            border-radius: 20px;
+            box-shadow: none;
+            width: 20%;
+            font-size: 10px;
+            margin: 20px;
+        }
+        .filter{
+            font-size: 10px ;
+            position: relative;
+    
+        }
+        .dropdown{
+            display: inline;
+        }
+        .dropdown-item{
+            width: 80px;
+        }
+        .colormenu{
+            min-width: 0px !important; 
+            width: 80px;
+        }
+    }
+ 
+    @media screen and (max-width: 414px) and (min-width: 411px) {
+        .cardImage{
+            width: 350px;
+           }
+        .cardbody{
+            width: 350px;
+        }
+        .cardtext {
+            width: 270px;
+        }
+        .bottom-border{
+            display: inline-block;
+            border:  1px solid black;
+            border-radius: 20px;
+            box-shadow: none;
+            width: 20%;
+            font-size: 10px;
+            margin: 20px;
+        }
+        .filter{
+            font-size: 10px ;
+            position: relative;
+    
+        }
+        .dropdown{
+            display: inline;
+        }
+        .dropdown-item{
+            width: 80px;
+        }
+        .colormenu{
+            min-width: 0px !important; 
+            width: 80px;
+        }
+    }
+ 
+    @media screen and (max-width: 821px) and (min-width: 819px) {
+        .cardImage{
+            width: 350px;
+           }
+        .cardbody{
+            width: 350px;
+        }
+        .cardtext {
+            width: 270px;
+        } 
+        .bottom-border{
+            display: inline-block;
+            border:  1px solid black;
+            border-radius: 20px;
+            box-shadow: none;
+            width: 20%;
+            font-size: 10px;
+            margin: 20px;
+        }
+        .filter{
+            font-size: 10px ;
+            position: relative;
+    
+        }
+        .dropdown{
+            display: inline;
+        }
+        .dropdown-item{
+            width: 80px;
+        }
+        .colormenu{
+            min-width: 0px !important; 
+            width: 80px;
+        }
+    }
+    @media screen and (max-width: 913px) and (min-width: 911px) {
+        .cardImage{
+            height: 350px;
+            width: 400px;
+           }
+        .cardbody{
+            width: 400px;
+        }
+        .cardtext {
+            width: 300px;
+        }
+        .bottom-border{
+            display: inline-block;
+            border:  1px solid black;
+            border-radius: 20px;
+            box-shadow: none;
+            width: 20%;
+            font-size: 10px;
+            margin: 20px;
+        }
+        .filter{
+            font-size: 10px ;
+            position: relative;
+    
+        }
+        .dropdown{
+            display: inline;
+        }
+        .dropdown-item{
+            width: 80px;
+        }
+        .colormenu{
+            min-width: 0px !important; 
+            width: 80px;
+        }
+    }
+    @media screen and (max-width: 541px) and (min-width: 539px) {
+        .cardImage{
+            height: 300px;
+            width: 300px;
+            margin-left: 30%;
+           }
+        .cardbody{
+            width: 300px;
+            margin-left: 30%;
+        }
+        .cardtext {
+            width: 150px;
+        }
+        .bottom-border{
+            display: inline-block;
+            border:  1px solid black;
+            border-radius: 20px;
+            box-shadow: none;
+            width: 20%;
+            font-size: 10px;
+            margin: 20px;
+        }
+        .filter{
+            font-size: 10px ;
+            position: relative;
+    
+        }
+        .dropdown{
+            display: inline;
+        }
+    }
+    @media screen and (max-width: 281px) and (min-width: 279px) {
+        .card{
+            margin-left: 0% !important;
+            width: 270px !important;
+        }
+        .cardImage{
+            height: 250px;
+            width: 250px;
+           }
+        .cardbody{
+            width: 250px;
+        }
+        .cardtext {
+            width: 200px;
+        }
+        .bottom-border{
+            display: inline-block;
+            border:  1px solid black;
+            border-radius: 10px;
+            box-shadow: none;
+            width: 25%;
+            font-size: 10px;
+            margin: 10px;
+        }
+        .filter{
+            font-size: 10px ;
+            position: relative;
+    
+        }
+        .dropdown{
+            display: inline;
+        }
+        .dropdown-item{
+            width: 80px;
+        }
+        .colormenu{
+            min-width: 0px !important; 
+            width: 80px;
+        }
+    }
+    
+    @media screen and (max-width: 1024px) and (min-width: 1024px) {
+        .card{
+            margin-left: 0% !important;
+            width: 240px !important;
+        }
+        .cardImage{
+            height: 230px;
+            width: 240px;
+           }
+        .cardbody{
+            width: 240px;
+        }
+        .cardtext {
+            width: 200px;
+        }
+    } 
+    @media screen and (max-width: 1280px) and (min-width: 1280px) {
+        .card{
+            margin-left: 0% !important;
+            width: 280px !important;
+        }
+        .cardImage{
+            width: 280px;
+           }
+        .cardbody{
+            width: 280px;
+        }
+        .cardtext {
+            width: 250px;
+        }
+    }
+    
+@media screen and (max-width: 320px) and (min-width: 320px) {
+    
+    .cardtext {
+        width: 270px;
+    }
+    .bottom-border{
+        display: inline-block;
+        border:  1px solid black;
+        border-radius: 20px;
+        box-shadow: none;
+        width: 30%;
+        font-size: 10px;
+        margin: 0px;
+    }
+    
+    .filter{
+        font-size: 10px ;
+        position: relative;
+
+    }
+    .dropdown{
+        display: inline;
+    }
+    .dropdown-item{
+        width: 80px;
+    }
+    .colormenu{
+        min-width: 0px !important; 
+        width: 80px;
+    }
+   }
+   @media screen and (max-width: 769px) and (min-width: 767px) {
+    
+    .cardtext {
+        width: 270px;
+    }
+    .bottom-border{
+        display: inline-block;
+        border:  1px solid black;
+        border-radius: 20px;
+        box-shadow: none;
+        width: 30%;
+        font-size: 10px;
+        margin: 0px;
+    }
+    
+    .filter{
+        font-size: 10px ;
+        position: relative;
+
+    }
+    .dropdown{
+        display: inline;
+    }
+    .dropdown-item{
+        width: 80px;
+    }
+    .colormenu{
+        min-width: 0px !important; 
+        width: 80px;
+    }
+   }

@@ -1,0 +1,226 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no">
+		<title>CRM :: Organization</title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700&display=swap" rel="stylesheet"/>
+        <style>
+         .outer-section-one
+         {
+             /* max-width:8.3in;
+             min-height:11.6in; */
+             width:90%;
+             margin:0 auto;
+         }
+        </style>
+    </head>
+    <body>
+        <div class="outer-section-one" style="height: 710px; font-family: 'Poppins', sans-serif; padding: 20px;">
+            <div class="header" style="padding: 20px 0;     display: inline-block; width: 100%;">
+                <div class="" style="float: left; width:10%; text-align: center;">
+                    <h4 style="word-break: break-all; font-size: 7px;margin: 0px;font-weight: 500;"> 
+                        Administrator: <br/> <%= contractType %>
+                    </h4>                    
+                </div>
+                <div class="" style="float: left; width:75%; text-align: center;">
+                    <h2 style="word-break: break-all; font-size:12px;margin: 0px;letter-spacing: 1px;font-weight: 600;"> 
+                        NationAll Auto Protection 
+                        <p style="margin:0">Mintenence Program</p>
+                    </h2>
+                </div>
+                <div class="" style="float: left; width:15%; ">
+                    <h4 style="word-break: break-all; font-size: 7px;margin: 0px;font-weight: 500;">
+                        NationAll Auto Protection
+                        4800 Dundas Street West
+                         Suite 207, Toronto
+                        Ontarion, M9A 1B1
+                    </h4>
+                        <p style="margin: 0; word-break: break-all; font-size: 7px; font-weight: 400;">Phone : 1 855 444 7822</p>
+                        <p style="margin: 0; word-break: break-all; font-size: 7px; font-weight: 400;">Fax: 519 653 9596</p>
+                </div>
+            </div>
+
+            <div class="tableWRapper" style="border: 2px solid #000; margin-bottom:10px;">
+
+                <table style=" border-collapse: collapse; margin:auto; width: 100%; ">
+                    <thead style="background:#d9d9d9; ">
+                        <tr style="border-bottom: 2px solid #000;">
+                            <th colspan="2" class="white-box" style="">
+                                <h3 style="word-break: break-all; font-size:8px;line-height: 24px;margin: 0; padding: 0px; text-align: left; font-weight: 600; text-transform: uppercase;">CUSTOMER INFORMATION</h3>
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="white-box" style="width: 70%; vertical-align: bottom; padding:0px;padding-left:6px"> 
+                                <div style="margin: 0; word-break: break-word; font-size: 8px;line-height: 15px;    width: 90px; font-weight: 400; text-transform: uppercase;">
+                                    <%=firstName%>,<%= lastName %> <br/>
+                                    <%= streetAddress %> , <%= city %> <br/>
+                                    <%= province %>-<%= postalCode %> 
+                                </div>                           
+                                <p style="margin: 0; word-break: break-all; font-size: 8px;line-height: 24px; font-weight: 400; text-transform: uppercase;">HOME PHONE : <%=telephone%> </p>
+                                <p style="margin: 0; word-break: break-all; font-size:8px;line-height: 24px; font-weight: 400; text-transform: uppercase;">work PHONE : <%=telephone%></p>
+                            </td>
+                            <td class="white-box" style="width: 30%; vertical-align: top;padding: 10px; ">
+                                <h4 style="margin: 0; word-break: break-all; font-size: 8px;line-height: 20px; font-weight: 600; margin-bottom: 15px;">Contract No : <%=contractNumber%></h4>   
+                                <h4 style="margin: 0; word-break: break-all; font-size: 8px;line-height: 20px; font-weight: 600;">Total Price : <%=subTotal%></h4>                            
+                                <p style="margin: 0; word-break: break-all; font-size:6px;line-height: 20px; font-weight: 400;">(Excluding Taxes)</p>
+                            </td>
+                        </tr>
+                        <tr></tr>
+                    </tbody>
+                </table>
+
+
+                <table style=" border-collapse: collapse; margin:auto; width: 100%;">
+                    <thead style="background:#d9d9d9; ">
+                        <tr style="border-bottom: 2px solid #000; border-top: 2px solid #000;">
+                            <th colspan="2" class="white-box" style="">
+                                <h3 style="word-break: break-all; font-size:8px;line-height: 24px;margin: 0; padding:0px; text-align: left; font-weight: 600; text-transform: uppercase;">DEALER INFORMATION</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="white-box" style="width: 50%; vertical-align: top; padding:0px;padding-left:5px;">                            
+                                <div style="margin: 0; word-break: break-word; font-size: 8px;line-height: 15px;    width: 90px; font-weight: 400; text-transform: uppercase;">
+                                    <%=dealerFirstName%>,<%=dealerLastName%> <br/>
+                                    <%=dealerStreetAddress%><br/>
+                                    <%=dealerProvience%>   
+                                  </div>
+                            </td>
+                            <td class="white-box" style="width: 50%; vertical-align: top;padding:0px; ">
+                                <h4 style="margin: 0; word-break: break-all; font-size:8px;line-height: 20px; font-weight: 600; margin-bottom: 10px;"> Dealer Legal Name : <%=dealerName%></h4>   
+                                <h4 style="margin: 0; word-break: break-all; font-size:8px;line-height: 20px; font-weight: 600; margin-bottom: 5px;"> Registration No : <%=dealerNumber%></h4>                            
+                                <h4 style="margin: 0; word-break: break-all; font-size:8px;line-height: 20px; font-weight: 600;  margin-bottom: 5px;"> Salesperson : <%=salesFirstName%> <%=salesLastName%></h4>   
+                                <h4 style="margin: 0; word-break: break-all; font-size:8px;line-height: 20px; font-weight: 600;  margin-bottom: 5px;"> Salesperson Registration No : <%=registrationNumber%></h4>   
+                            </td>
+                        </tr>
+                        <tr></tr>
+                    </tbody>
+            
+                </table>
+
+                <table style=" border-collapse: collapse; margin:auto; width: 100%;">
+                    <thead style="background:#d9d9d9; ">
+                        <tr style="border-top: 2px solid #000; border-bottom: 2px solid #000;">
+                            <th colspan="2" class="white-box" style="">
+                                <h3 style="word-break: break-all; font-size:8px;line-height: 24px;margin: 0; padding:0px; text-align: left; font-weight: 600; text-transform: uppercase;">VEHICLE INFORMATION</h3>
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width: 100%;">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="width: 20%; margin: 0; word-break: break-all; font-size:8px;line-height: 20px; font-weight: 600;  padding: 0px;"> Year: <%= unitYear %> </td>
+                                        <td style="width: 20%; margin: 0; word-break: break-all; font-size:8px;line-height: 20px; font-weight: 600;  padding: 0px;"> Make: <%= unitMake %></td>
+                                        <td style="width: 20%; margin: 0; word-break: break-all; font-size:8px;line-height: 20px; font-weight: 600;  padding: 0px;"> Model: <%= unitModel %></td>
+                                        <td style="width: 20%; margin: 0; word-break: break-all; font-size:8px;line-height: 20px; font-weight: 600;  padding: 0px;"> Odometer:<%=unitOdometer%> </td>
+                                        <td style="width: 20%; margin: 0; word-break: break-all; font-size:8px;line-height: 20px; font-weight: 600;  padding:0px;"> Price: <%=unitPurchasePrice%> </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" style=" margin: 0; word-break: break-all; font-size:8px;line-height: 20px; font-weight: 600;  padding: 0px;"> VIN: <%=unitPurchasePrice%></td>
+                                        <td colspan="3" style=" margin: 0; word-break: break-all; font-size:8px;line-height: 20px; font-weight: 600;  padding: 0px;"> Lineholder: </td>                                  
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="" style=" text-align: center; background: #d9d9d9; border: 2px solid #000;word-break: break-all; font-size:8px;line-height: 24px; padding: 0px;font-weight: 600; text-transform: uppercase;
+            -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1); -moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1); box-shadow: 5px 5px 0px 0px rgba(0,0,0,1); margin-bottom: 20px; ">
+                maintenance Program purchased <span style="text-transform: capitalize; font-size: 8px;">(see page 2 for details)</span>
+            </div>
+
+            <p style="word-break: break-all; font-size:8px; font-weight: 500;"><%=warrantyPlan %></p>
+
+            <div class="" style=" text-align: center; background: #d9d9d9; border: 2px solid #000;word-break: break-all; font-size: 8px;line-height: 24px;margin: 0; padding:0px;font-weight: 600; text-transform: uppercase;">
+                please refer to Agreement Terms & Conditions for Comlete Coverage Details
+            </div>
+
+         </div>
+         <div class="bottom" style="border-top: 2px solid #ccc;width: 96%;padding: 0px 15px;">
+            <h3 style="float:left;font-family: 'Poppins', sans-serif;font-weight:600;font-size: 8px;">Page 1 of 2</h3>
+            <div style="float:right;">
+               <h4 style="font-family: 'Poppins', sans-serif;font-weight:500;font-size: 7px;margin-bottom:0px;    text-align: right;">
+                   NationAll Auto Protection | 4800 Dundas Street West, Suite 207, Toronto, Ontario, M9A 1B1 | HST# 735258899RT001
+               </h4>
+               
+               <h4 style="font-family: 'Poppins', sans-serif;font-weight:500;font-size: 7px;margin-top:2px;    text-align: right;">
+                   NationAll Auto Protection V09.27.19
+               </h4>
+               
+           </div>
+           <p style="  width: 225px; text-align: center; font-family: 'Poppins', sans-serif;font-weight:500;font-size: 8px;    margin: 0 auto;
+           margin-top: 22px;">
+            LALANDE, MARIE 2020-11-11 19:17:59
+    </p>
+       </div>
+
+       <!-- page 2 -->
+
+       <div class="col-md-12 outer-section-one" style="height: 700px; float: left; width: 100%;">
+        <div class="hed" style="text-align: right;padding: 0px 100px;border-bottom: 2px solid #ccc">
+            <h3 style="margin-top: 15px; margin-right:5px;font-family: 'Poppins', sans-serif;font-weight:600;font-size:10px;">
+                Contract No:<span></span</h3>
+        </div>
+        <div class="detail" style="padding:0px 15px">
+            <h3 style="text-align: center;background: #e8e3e3; padding-left: 10px;font-family: 'Poppins', sans-serif;
+            font-weight: 600;font-size:8px;text-transform: uppercase;border: 2px solid #ccc;">Agreement Terms and Conditions - 5 Year Unlimited KM Maintanance Program</h3>
+            <h4 style=" text-align: center;font-family: 'Poppins', sans-serif;
+            font-weight: 600;font-size: 8px;">Administrator-Nationwide Dealer Products Insurer/Issuer - NationAll Auto Protection</h4>
+                <div class="det-sec" style="width:450px;margin: 0 auto;
+                border: 2px solid #ccc;padding: 13px 13px;">
+                    <div class="terms" style="border: 2px solid #ccc;">
+                        <h3 style="text-align: center;font-family: 'Poppins', sans-serif;
+                        font-weight: 600;font-size: 13px;">What is covered Under this program:</h3>
+                        <ul>
+                            <li style="font-family: 'Poppins', sans-serif;font-weight:500;font-size: 11px;">1 Free Safety and Maintenance Inspection Per Year</li>
+                            <li style="font-family: 'Poppins', sans-serif;font-weight:500;font-size: 11px;">1 Free Road Trip Inspection</li>
+                            <li style="font-family: 'Poppins', sans-serif;font-weight:500;font-size: 11px;">1 Free Fluid Top-Up Per Year</li>
+                            <li style="font-family: 'Poppins', sans-serif;font-weight:500;font-size: 11px;">1 Tire Rotation Per Year</li>
+                            <li style="font-family: 'Poppins', sans-serif;font-weight:500;font-size: 11px;">1 x Windshield Deductible Coverage up to $75</li>
+                            <li style="font-family: 'Poppins', sans-serif;font-weight:500;font-size: 11px;">Free MTO Trade-In Appraisal</li>
+                            <li style="font-family: 'Poppins', sans-serif;font-weight:500;font-size: 11px;">Free Shuttle Service to and from Dealership</li>
+                            <li style="font-family: 'Poppins', sans-serif;font-weight:500;font-size: 11px;">10% Off Service</li>
+                            <li style="font-family: 'Poppins', sans-serif;font-weight:500;font-size: 11px;">10% Off Labour</li>
+                            <li style="font-family: 'Poppins', sans-serif;font-weight:500;font-size: 11px;">10% Off Parts</li>
+                            <li style="font-family: 'Poppins', sans-serif;font-weight:500;font-size: 11px;">10% Off Accessories</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <p style="font-family: 'Poppins', sans-serif;font-weight:500;font-size: 11px;text-align:center;margin-bottom:0px;">No Cash Value</p>
+                    <p style="font-family: 'Poppins', sans-serif;font-weight:500;font-size: 11px;text-align:center;margin-bottom:0px;">Non-Transferable</p>
+                    <p style="font-family: 'Poppins', sans-serif;font-weight:500;font-size: 11px;text-align:center;margin-bottom:0px;">Only avilable at Participating 401 Auto Locations</p>
+        </div> 
+    </div>
+    <div class="bottom" style="border-top: 2px solid #ccc;padding: 0px 15px;float:left;width:96%;">
+        <h3 style="float:left;font-family: 'Poppins', sans-serif;font-weight:600;font-size: 8px;">Page 1 of 2</h3>
+        <div style="float:right;">
+           <h4 style="font-family: 'Poppins', sans-serif;font-weight:500;font-size: 7px;margin-bottom:0px;    text-align: right;">
+               NationAll Auto Protection | 4800 Dundas Street West, Suite 207, Toronto, Ontario, M9A 1B1 | HST# 735258899RT001
+           </h4>
+           
+           <h4 style="font-family: 'Poppins', sans-serif;font-weight:500;font-size: 7px;margin-top:2px;    text-align: right;">
+               NationAll Auto Protection V09.27.19
+           </h4>
+         
+       </div>
+       <p style="  width: 225px; text-align: center; font-family: 'Poppins', sans-serif;font-weight:500;font-size: 8px;    margin: 0 auto;
+       margin-top: 22px;">
+        LALANDE, MARIE 2020-11-11 19:17:59
+</p>
+   </div>
+    </body>
+</html>

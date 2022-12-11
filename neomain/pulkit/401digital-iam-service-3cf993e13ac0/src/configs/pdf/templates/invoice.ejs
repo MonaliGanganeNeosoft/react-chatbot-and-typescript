@@ -1,0 +1,192 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>CRM :: Organization</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700&display=swap" rel="stylesheet" />
+  <style>
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .outer-section-one {
+      /* max-width:8.3in;
+    min-height:11.6in; */
+      position: relative;
+      width: 95%;
+      margin: 0 auto;
+
+    }
+
+    .col-falf {
+      float: left;
+      width: 50%;
+    }
+    .table-outer {
+      width:100%; 
+      border-collapse: collapse;
+      border-spacing: 0;
+       /* margin-bottom: 10px;   */
+       /* border-bottom: 3px solid #01aef0; */
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="outer-section-one" style="padding: 20px 0px 0px 0 px; font-family: 'Poppins', sans-serif; ">
+
+    <header style="width: 18cm; margin:25px auto 0;">
+      <div class="col-falf">
+        <img src="<%=domain%>/images/invoice/logo-one.png" alt="" style="float: left; width:150px;">
+      </div>
+      <div class="col-falf">
+        <h1 style="font:900 18px/23px'Poppins', sans-serif; text-align: left; margin-bottom: 0; margin-top: 5px;">
+          INVOICE</h1>
+        <div class="invoice-info-otr" style="margin-left: 0px;">
+
+          <p style="font:10px/13px'Poppins', sans-serif; color:#6b6a6a;margin: 0; text-align: left;">Invoice Date: <span
+              style="margin-left: 5px; color: #333;">27-11-2020</span></p>
+          <p style="font:10px/13px'Poppins', sans-serif; color:#6b6a6a;margin: 0; text-align: left;">Invoice No. <span
+              style="margin-left: 5px; color: #333;">A2521</span></p>
+        </div>
+      </div>
+      <div class="invoice-to" style="width:100%;">
+        <h2 style="font:500 10px/13px'Poppins', sans-serif; color:#000;">Invoice To</h2>
+        <p style="margin: 0; color:#6b6a6a;">A</p>
+        <p style="margin: 0; color:#6b6a6a;">B</p>
+      </div>
+    </header>
+    <div style="min-height: 690px;">
+      <table class="w3-table-all table-outer" >
+        <thead>
+          <tr style="background:#01aef0; ">
+            <th
+              style="width:80px; border-spacing: 0;padding: 5px 5px; color:#fff; text-align: left; font:9px/13px'Poppins', sans-serif;">
+              Contract No</th>
+            <th
+              style="width:80px; border-spacing: 0;padding: 5px 5px; color:#fff; text-align: left; font:9px/13px'Poppins', sans-serif;">
+              Stock No</th>
+            <th
+              style="width:80px; border-spacing: 0;padding: 5px 5px; color:#fff; text-align: left; font:9px/13px'Poppins', sans-serif;">
+              Customer Name</th>
+            <th
+              style="width:220px; border-spacing: 0;padding: 5px 5px; color:#fff; text-align: left; font:9px/13px'Poppins', sans-serif;">
+              Product</th>
+            <th
+              style="width:80px; border-spacing: 0;padding: 5px 5px; color:#fff; text-align: right; font:9px/13px'Poppins', sans-serif;">
+              Cost</th>
+          </tr>
+        </thead>
+        <% for(let i=0; i < data.length; i++) { %>
+        <tr>
+          <td style="padding: 4px 5px; font:6px/9px'Poppins', sans-serif;"><%= data[i]['Contract Number'] %></td>
+          <td style="padding: 4px 5px; font:6px/9px'Poppins', sans-serif;"><%= data[i]['Stock Number'] %></td>
+          <td style="padding: 4px 5px; font:6px/9px'Poppins', sans-serif;"><%= data[i]['Customer First Name'] %>
+            <%= data[i]['Customer Last Name'] %></td>
+          <td style="vertical-align: top; padding: 4px 5px; font:6px/9px'Poppins', sans-serif;">Lorem Ipsum is simply dummy text of the printing and typesetting</td>
+          <!-- <td style="vertical-align: top; padding: 4px 5px; font:6px/9px'Poppins', sans-serif;"><%= data[i]['Selected Product'] %></td> -->
+          <td style="text-align: right; padding: 4px 5px; font:6px/9px'Poppins', sans-serif;"><%= data[i]['Cost'] %></td>
+        </tr>
+        <% } %>
+ 
+
+      </table>
+      <div clsss="line" style="
+        height: 3px;
+        width: 100%;
+        background: #01aef0;
+        margin-top: 0px;"></div>
+    </div>
+
+
+
+    <div class="footer" style="position: absolute;bottom: 0; width: 100%;">
+
+      <div class="address" style="width: 100%; margin:10px auto 10px;">
+        <h3 style="font:600 10px/13px'Poppins', sans-serif; color: #000;">Payment Address</h3>
+        <p style="font:10px/13px'Poppins', sans-serif; color:#6b6a6a; margin: 0;">2225 Eagle St N</p>
+        <p style="font:10px/13px'Poppins', sans-serif; color:#6b6a6a; margin: 0;">Cambridge, ON N3H 4R7</p>
+
+
+        <div class="hst" style="width: 100%; float: right;">
+          <div class="invoice-info-otr" style="margin-left: 0px;">
+            <p style="font:10px/13px'Poppins', sans-serif; color:#6b6a6a;margin: 0; text-align: left;">Sub Total: <span
+                style="margin-left: 5px; color: #333;">$1020</span></p>
+            <p style="font:10px/13px'Poppins', sans-serif; color:#6b6a6a;margin: 0; text-align: left;">Tax <span
+                style="margin-left: 5px; color: #333;">A2521</span></p>
+          </div>
+          <div style="
+            padding: 10px 15px;
+            font: 12px/14px'Poppins', sans-serif;
+            color: #fff;
+            background: #01aef0;
+            min-width: 200px;
+            margin-top: 10px;
+            ">
+            Grand Total :
+          </div>
+        </div>
+
+        <!-- <div class="hst">
+          <p style="font:12px/17px'Poppins', sans-serif; color:#6b6a6a; text-align: right;">HST #:7352255 54847878884584</p>
+        </div> -->
+
+
+
+        <div class="thank-you">
+          <h4
+            style="width: 100%; margin-top:2px;margin-bottom:2px;font:600 15px/17px'Poppins', sans-serif; color:#3d3d3d; text-align: center;">
+            THANK YOU FOR YOUR BUSINESS</h4>
+        </div>
+
+        <table style="width:100%;">
+          <td style="vertical-align: middle;">
+            <i><img style="width: 35px; margin-top: 5px;" src="<%=domain%>/images/invoice/icon-01.png" alt=""></i>
+          </td>
+          <td style="font:10px/14px'Poppins', sans-serif; color:#6b6a6a;padding-top: 5px; ">
+            accounting@401auto.ca<br>
+            nationallautoprotection.com
+          </td>
+
+          <td> <i><img style="width: 35px; margin-top: 5px;" src="<%=domain%>/images/invoice/icon-02.png" alt=""></i>
+          </td>
+          <td style="font:10px/14px'Poppins', sans-serif; color:#6b6a6a;padding-top: 5px;">2225 Eagle St N<br>
+            Cambridge, ON N3H 4R7
+          </td>
+          <td><i><img style="width: 35px; margin-top: 5px;" src="<%=domain%>/images/invoice/icon-03.png" alt=""></i>
+          </td>
+          <td style="font:10px/14px'Poppins', sans-serif; color:#6b6a6a;padding-top: 5px;">1 (855) 444 7822</td>
+        </table>
+
+      </div>
+      <div style="margin: 0 auto;">
+        <h6 style="
+              font: 10px/13px'Poppins', sans-serif;
+              color: #6b6a6a;
+              text-align: center;
+              letter-spacing: 2px;
+              display: block;
+              margin: 15px auto;
+              ">www.nationallautoprotection.com</h6>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
